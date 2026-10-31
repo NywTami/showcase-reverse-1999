@@ -1,0 +1,29 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Generated output
+build/
+dist/
+coverage/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# OS metadata
+.DS_Store
+
+# Local tool folders
+.qodo/

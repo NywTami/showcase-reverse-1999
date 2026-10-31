@@ -1,0 +1,3518 @@
+/* =========================================================
+   CHARACTER / SKIN DATA
+   ========================================================= */
+
+const originData = {  
+  1: {
+    name: "37",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "37 ready for battle.",
+    image: "37/37_Garment1.png",
+    tabimage: "37/37_Garment1.png"
+  },
+  2: {
+    name: "6",
+    badges: [{ icon: "asset/Intellect_Icon.png", text: "Healer" }],
+    quote: "6 ready for battle.",
+    image: "6/6_Garment1.png",
+    tabimage: "6/6_Garment1.png"
+  },
+  3: {
+    name: "Aleph",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Aleph ready for battle.",
+    image: "Aleph/Aleph_Garment1.png",
+    tabimage: "Aleph/Aleph_Garment1.png"
+  },
+  4: {
+    name: "Alexios",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Alexios ready for battle.",
+    image: "Alexios/Alexios_Garment1.png",
+    tabimage: "Alexios/Alexios_Garment1.png"
+  },
+  5: {
+    name: "AliEn T",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "AliEn T ready for battle.",
+    image: "AliEn_T/AliEn_T_Live2D.png",
+    tabimage: "AliEn_T/AliEn_T_Live2D.png"
+  },
+  6: {
+    name: "An an Lee",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "An an Lee ready for battle.",
+    image: "An-an_Lee/An-an_Lee_Garment1.png",
+    tabimage: "An-an_Lee/An-an_Lee_Garment1.png"
+  },
+  7: {
+    name: "Anjo Nala",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Anjo Nala ready for battle.",
+    image: "Anjo_Nala/Anjo_Nala_Garment1_Live2D.png",
+    tabimage: "Anjo_Nala/Anjo_Nala_Garment1_Live2D.png"
+  },
+  8: {
+    name: "APPLe",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "APPLe ready for battle.",
+    image: "APPLe/APPLe_Garment1.png",
+    tabimage: "APPLe/APPLe_Garment1.png"
+  },
+  9: {
+    name: "Argus",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Argus ready for battle.",
+    image: "Argus/Argus_Garment1.png",
+    tabimage: "Argus/Argus_Garment1.png"
+  },
+  10: {
+    name: "Avgust",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Avgust ready for battle.",
+    image: "Avgust/Avgust_Garment1.png",
+    tabimage: "Avgust/Avgust_Garment1.png"
+  },
+  11: {
+    name: "A Knight",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "A Knight ready for battle.",
+    image: "A_Knight/A_Knight_Garment1.png",
+    tabimage: "A_Knight/A_Knight_Garment1.png"
+  },
+  12: {
+    name: "Baby Blue",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Baby Blue ready for battle.",
+    image: "Baby_Blue/Baby_Blue_Garment1.png",
+    tabimage: "Baby_Blue/Baby_Blue_Garment1.png"
+  },
+  13: {
+    name: "Balloon Party",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Balloon Party ready for battle.",
+    image: "Balloon_Party/Balloon_Party_Garment1.png",
+    tabimage: "Balloon_Party/Balloon_Party_Garment1.png"
+  },
+  14: {
+    name: "Barbara",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Barbara ready for battle.",
+    image: "Barbara/Barbara_Garment1.png",
+    tabimage: "Barbara/Barbara_Garment1.png"
+  },
+  15: {
+    name: "Barcarola",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Barcarola ready for battle.",
+    image: "Barcarola/Barcarola_Garment1.png",
+    tabimage: "Barcarola/Barcarola_Garment1.png"
+  },
+  16: {
+    name: "Beryl",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Beryl ready for battle.",
+    image: "Beryl/Beryl_Garment1.png",
+    tabimage: "Beryl/Beryl_Garment1.png"
+  },
+  17: {
+    name: "Bkornblume",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Bkornblume ready for battle.",
+    image: "Bkornblume/Bkornblume_Garment1.png",
+    tabimage: "Bkornblume/Bkornblume_Garment1.png"
+  },
+  18: {
+    name: "Blonney",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Blonney ready for battle.",
+    image: "Blonney/Blonney_Garment1.png",
+    tabimage: "Blonney/Blonney_Garment1.png"
+  },
+  19: {
+    name: "Brimley",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Brimley ready for battle.",
+    image: "Brimley/Brimley_Garment1.png",
+    tabimage: "Brimley/Brimley_Garment1.png"
+  },
+  20: {
+    name: "Brume",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Brume ready for battle.",
+    image: "Brume/Brume_Garment1.png",
+    tabimage: "Brume/Brume_Garment1.png"
+  },
+  21: {
+    name: "Buddy Fairchild",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Buddy Fairchild ready for battle.",
+    image: "Buddy_Fairchild/Buddy_Fairchild_Garment1.png",
+    tabimage: "Buddy_Fairchild/Buddy_Fairchild_Garment1.png"
+  },
+  22: {
+    name: "Centurion",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Centurion ready for battle.",
+    image: "Centurion/Centurion_Garment1.png",
+    tabimage: "Centurion/Centurion_Garment1.png"
+  },
+  23: {
+    name: "Charlie",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Charlie ready for battle.",
+    image: "Charlie/Charlie_Garment1.png",
+    tabimage: "Charlie/Charlie_Garment1.png"
+  },
+  24: {
+    name: "Charon",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Charon ready for battle.",
+    image: "Charon/Charon_Garment1.png",
+    tabimage: "Charon/Charon_Garment1.png"
+  },
+  25: {
+    name: "Cheng Heguang",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Cheng Heguang ready for battle.",
+    image: "Cheng_Heguang/Cheng_Heguang_Garment1.png",
+    tabimage: "Cheng_Heguang/Cheng_Heguang_Garment1.png"
+  },
+  26: {
+    name: "Click",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Click ready for battle.",
+    image: "Click/Click_Garment1.png",
+    tabimage: "Click/Click_Garment1.png"
+  },
+  27: {
+    name: "Coppélia",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Coppélia ready for battle.",
+    image: "Coppélia/Coppélia_Garment1.png",
+    tabimage: "Coppélia/Coppélia_Garment1.png"
+  },
+  28: {
+    name: "Cornerstone",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Cornerstone ready for battle.",
+    image: "Cornerstone/Cornerstone_Garment1.png",
+    tabimage: "Cornerstone/Cornerstone_Garment1.png"
+  },
+  29: {
+    name: "Corvus",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Corvus ready for battle.",
+    image: "Corvus/Corvus_Garment1.png",
+    tabimage: "Corvus/Corvus_Garment1.png"
+  },
+  30: {
+    name: "Cristallo",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Cristallo ready for battle.",
+    image: "Cristallo/Cristallo_Garment1.png",
+    tabimage: "Cristallo/Cristallo_Garment1.png"
+  },
+  31: {
+    name: "Darley Clatter",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Darley Clatter ready for battle.",
+    image: "Darley_Clatter/Darley_Clatter_Garment1.png",
+    tabimage: "Darley_Clatter/Darley_Clatter_Garment1.png"
+  },
+  32: {
+    name: "Desert Flannel",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Desert Flannel ready for battle.",
+    image: "Desert_Flannel/Desert_Flannel_Garment1.png",
+    tabimage: "Desert_Flannel/Desert_Flannel_Garment1.png"
+  },
+  33: {
+    name: "Diggers",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Diggers ready for battle.",
+    image: "Diggers/Diggers_Garment1.png",
+    tabimage: "Diggers/Diggers_Garment1.png"
+  },
+  34: {
+    name: "Dikke",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Dikke ready for battle.",
+    image: "Dikke/Dikke_Garment1.png",
+    tabimage: "Dikke/Dikke_Garment1.png"
+  },
+  35: {
+    name: "Door",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Door ready for battle.",
+    image: "Door/Door_Live2D.png",
+    tabimage: "Door/Door_Live2D.png"
+  },
+  36: {
+    name: "Druvis III",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Druvis III ready for battle.",
+    image: "Druvis_III/Druvis_III_Garment1.png",
+    tabimage: "Druvis_III/Druvis_III_Garment1.png"
+  },
+  37: {
+    name: "Eagle",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Eagle ready for battle.",
+    image: "Eagle/Eagle_Garment1.png",
+    tabimage: "Eagle/Eagle_Garment1.png"
+  },
+  38: {
+    name: "Enigma",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Enigma ready for battle.",
+    image: "Enigma/Enigma_Garment1.png",
+    tabimage: "Enigma/Enigma_Garment1.png"
+  },
+  39: {
+    name: "Erick",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Erick ready for battle.",
+    image: "Erick/Erick_Garment1.png",
+    tabimage: "Erick/Erick_Garment1.png"
+  },
+  40: {
+    name: "Eternity",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Eternity ready for battle.",
+    image: "Eternity/Eternity_Garment1.png",
+    tabimage: "Eternity/Eternity_Garment1.png"
+  },
+  41: {
+    name: "Everecho",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Everecho ready for battle.",
+    image: "Everecho/Everecho_Garment1.png",
+    tabimage: "Everecho/Everecho_Garment1.png"
+  },
+  42: {
+    name: "Ezio Auditore",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Ezio Auditore ready for battle.",
+    image: "Ezio_Auditore/Ezio_Auditore_Garment1.png",
+    tabimage: "Ezio_Auditore/Ezio_Auditore_Garment1.png"
+  },
+  43: {
+    name: "Ezra",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Ezra ready for battle.",
+    image: "Ezra/Ezra_Garment1.png",
+    tabimage: "Ezra/Ezra_Garment1.png"
+  },
+  44: {
+    name: "Fatutu",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Fatutu ready for battle.",
+    image: "Fatutu/Fatutu_Garment1.png",
+    tabimage: "Fatutu/Fatutu_Garment1.png"
+  },
+  45: {
+    name: "Flutterpage",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Flutterpage ready for battle.",
+    image: "Flutterpage/Flutterpage_Garment1.png",
+    tabimage: "Flutterpage/Flutterpage_Garment1.png"
+  },
+  46: {
+    name: "Getian",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Getian ready for battle.",
+    image: "Getian/Getian_Garment1.png",
+    tabimage: "Getian/Getian_Garment1.png"
+  },
+  47: {
+    name: "Hissabeth",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Hissabeth ready for battle.",
+    image: "Hissabeth/Hissabeth_Garment1.png",
+    tabimage: "Hissabeth/Hissabeth_Garment1.png"
+  },
+  48: {
+    name: "Horropedia",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Horropedia ready for battle.",
+    image: "Horropedia/Horropedia_Garment1.png",
+    tabimage: "Horropedia/Horropedia_Garment1.png"
+  },
+  49: {
+    name: "Igor",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Igor ready for battle.",
+    image: "Igor/Igor_Garment1.png",
+    tabimage: "Igor/Igor_Garment1.png"
+  },
+  50: {
+    name: "Isabella",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Isabella ready for battle.",
+    image: "Isabella/Isabella.png",
+    tabimage: "Isabella/Isabella.png"
+  },
+  51: {
+    name: "Isolde",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Isolde ready for battle.",
+    image: "Isolde/Isolde_Garment1.png",
+    tabimage: "Isolde/Isolde_Garment1.png"
+  },
+  52: {
+    name: "J",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "J ready for battle.",
+    image: "J/J_Garment1.png",
+    tabimage: "J/J_Garment1.png"
+  },
+  53: {
+    name: "Jessica",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Jessica ready for battle.",
+    image: "Jessica/Jessica_Garment1.png",
+    tabimage: "Jessica/Jessica_Garment1.png"
+  },
+  54: {
+    name: "Jiu Niangzi",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Jiu Niangzi ready for battle.",
+    image: "Jiu_Niangzi/Jiu_Niangzi_Garment1.png",
+    tabimage: "Jiu_Niangzi/Jiu_Niangzi_Garment1.png"
+  },
+  55: {
+    name: "John Titor",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "John Titor ready for battle.",
+    image: "John_Titor/John_Titor_Garment1.png",
+    tabimage: "John_Titor/John_Titor_Garment1.png"
+  },
+  56: {
+    name: "Kaalaa Baunaa",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Kaalaa Baunaa ready for battle.",
+    image: "Kaalaa_Baunaa/Kaalaa_Baunaa_Garment1.png",
+    tabimage: "Kaalaa_Baunaa/Kaalaa_Baunaa_Garment1.png"
+  },
+  57: {
+    name: "Kakania",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Kakania ready for battle.",
+    image: "Kakania/Kakania_Garment1.png",
+    tabimage: "Kakania/Kakania_Garment1.png"
+  },
+  58: {
+    name: "Kanjira",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Kanjira ready for battle.",
+    image: "Kanjira/Kanjira_Garment1.png",
+    tabimage: "Kanjira/Kanjira_Garment1.png"
+  },
+  59: {
+    name: "Kassandra",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Kassandra ready for battle.",
+    image: "Kassandra/Kassandra_Garment1.png",
+    tabimage: "Kassandra/Kassandra_Garment1.png"
+  },
+  60: {
+    name: "Leilani",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Leilani ready for battle.",
+    image: "Leilani/Leilani_Garment1.png",
+    tabimage: "Leilani/Leilani_Garment1.png"
+  },
+  61: {
+    name: "Liang Yue",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Liang Yue ready for battle.",
+    image: "Liang_Yue/Liang_Yue_Garment1.png",
+    tabimage: "Liang_Yue/Liang_Yue_Garment1.png"
+  },
+  62: {
+    name: "Lilya",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Lilya ready for battle.",
+    image: "Lilya/Lilya_Garment1.png",
+    tabimage: "Lilya/Lilya_Garment1.png"
+  },
+  63: {
+    name: "Loggerhead",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Loggerhead ready for battle.",
+    image: "Loggerhead/Loggerhead_Garment1.png",
+    tabimage: "Loggerhead/Loggerhead_Garment1.png"
+  },
+  64: {
+    name: "Lopera",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Lopera ready for battle.",
+    image: "Lopera/Lopera_Garment1.png",
+    tabimage: "Lopera/Lopera_Garment1.png"
+  },
+  65: {
+    name: "Lorelei",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Lorelei ready for battle.",
+    image: "Lorelei/Lorelei_Garment1.png",
+    tabimage: "Lorelei/Lorelei_Garment1.png"
+  },
+  66: {
+    name: "Lorentz Butterfly",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Lorentz Butterfly ready for battle.",
+    image: "Lorentz_Butterfly/Lorentz_Butterfly_Garment1.png",
+    tabimage: "Lorentz_Butterfly/Lorentz_Butterfly_Garment1.png"
+  },
+  67: {
+    name: "Lucy",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Lucy ready for battle.",
+    image: "Lucy/Lucy_Garment1.png",
+    tabimage: "Lucy/Lucy_Garment1.png"
+  },
+  68: {
+    name: "Marcus",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Marcus ready for battle.",
+    image: "Marcus/Marcus_Garment1.png",
+    tabimage: "Marcus/Marcus_Garment1.png"
+  },
+  69: {
+    name: "Marsha",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Marsha ready for battle.",
+    image: "Marsha/Marsha_Garment1.png",
+    tabimage: "Marsha/Marsha_Garment1.png"
+  },
+  70: {
+    name: "Matilda",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Matilda ready for battle.",
+    image: "Matilda/Matilda_Garment1.png",
+    tabimage: "Matilda/Matilda_Garment1.png"
+  },
+  71: {
+    name: "Melania",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Melania ready for battle.",
+    image: "Melania/Melania_Garment1.png",
+    tabimage: "Melania/Melania_Garment1.png"
+  },
+  72: {
+    name: "Mercuria",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Mercuria ready for battle.",
+    image: "Mercuria/Mercuria_Garment1.png",
+    tabimage: "Mercuria/Mercuria_Garment1.png"
+  },
+  73: {
+    name: "Mesmer Jr",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Mesmer Jr ready for battle.",
+    image: "Mesmer_Jr/Mesmer_Jr._Garment1.png",
+    tabimage: "Mesmer_Jr/Mesmer_Jr._Garment1.png"
+  },
+  74: {
+    name: "Moldir",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Moldir ready for battle.",
+    image: "Moldir/Moldir_Garment1.png",
+    tabimage: "Moldir/Moldir_Garment1.png"
+  },
+  75: {
+    name: "Mondlicht",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Mondlicht ready for battle.",
+    image: "Mondlicht/Mondlicht_Garment1.png",
+    tabimage: "Mondlicht/Mondlicht_Garment1.png"
+  },
+  76: {
+    name: "mp",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "mp ready for battle.",
+    image: "mp/Medicine_Pocket_Garment1.png",
+    tabimage: "mp/Medicine_Pocket_Garment1.png"
+  },
+  77: {
+    name: "Ms. NewBabel",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Ms. NewBabel ready for battle.",
+    image: "Ms._NewBabel/Ms._NewBabel_Garment1.png",
+    tabimage: "Ms._NewBabel/Ms._NewBabel_Garment1.png"
+  },
+  78: {
+    name: "Ms. Stranger",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Ms. Stranger ready for battle.",
+    image: "Ms._Stranger/Ms._Stranger_Garment1.png",
+    tabimage: "Ms._Stranger/Ms._Stranger_Garment1.png"
+  },
+  79: {
+    name: "Name Day",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Name Day ready for battle.",
+    image: "Name_Day/Name_Day_Garment1.png",
+    tabimage: "Name_Day/Name_Day_Garment1.png"
+  },
+  80: {
+    name: "Nautika",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Nautika ready for battle.",
+    image: "Nautika/Nautika_Garment1.png",
+    tabimage: "Nautika/Nautika_Garment1.png"
+  },
+  81: {
+    name: "Necrologist",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Necrologist ready for battle.",
+    image: "Necrologist/Necrologist_Garment1.png",
+    tabimage: "Necrologist/Necrologist_Garment1.png"
+  },
+  82: {
+    name: "Nick Bottom",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Nick Bottom ready for battle.",
+    image: "Nick_Bottom/Nick_Bottom_Garment1.png",
+    tabimage: "Nick_Bottom/Nick_Bottom_Garment1.png"
+  },
+  83: {
+    name: "Noire",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Noire ready for battle.",
+    image: "Noire/Noire_Garment1.png",
+    tabimage: "Noire/Noire_Garment1.png"
+  },
+  84: {
+    name: "NORA",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "NORA ready for battle.",
+    image: "NORA/NORA_Garment1.png",
+    tabimage: "NORA/NORA_Garment1.png"
+  },
+  85: {
+    name: "Oliver Fog",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Oliver Fog ready for battle.",
+    image: "Oliver_Fog/Oliver_Fog_Garment1.png",
+    tabimage: "Oliver_Fog/Oliver_Fog_Garment1.png"
+  },
+  86: {
+    name: "ONiON",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "ONiON ready for battle.",
+    image: "ONiON/ONiON_Live2D.png",
+    tabimage: "ONiON/ONiON_Live2D.png"
+  },
+  87: {
+    name: "Paper Heron",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Paper Heron ready for battle.",
+    image: "Paper_Heron/Paper_Heron_Garment1.png",
+    tabimage: "Paper_Heron/Paper_Heron_Garment1.png"
+  },
+  88: {
+    name: "Pavia",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Pavia ready for battle.",
+    image: "Pavia/Pavia_Garment1.png",
+    tabimage: "Pavia/Pavia_Garment1.png"
+  },
+  89: {
+    name: "Pickles",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Pickles ready for battle.",
+    image: "Pickles/Pickles_Garment1.png",
+    tabimage: "Pickles/Pickles_Garment1.png"
+  },
+  90: {
+    name: "Pioneer",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Pioneer ready for battle.",
+    image: "Pioneer/Pioneer_Garment1.png",
+    tabimage: "Pioneer/Pioneer_Garment1.png"
+  },
+  91: {
+    name: "Ramona",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Ramona ready for battle.",
+    image: "Ramona/Ramona_Garment1.png",
+    tabimage: "Ramona/Ramona_Garment1.png"
+  },
+  92: {
+    name: "Recoleta",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Recoleta ready for battle.",
+    image: "Recoleta/Recoleta_Garment1.png",
+    tabimage: "Recoleta/Recoleta_Garment1.png"
+  },
+  93: {
+    name: "Reed",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Reed ready for battle.",
+    image: "Reed/Reed_Garment1.png",
+    tabimage: "Reed/Reed_Garment1.png"
+  },
+  94: {
+    name: "Regulus",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Regulus ready for battle.",
+    image: "Regulus/Regulus_Garment1.png",
+    tabimage: "Regulus/Regulus_Garment1.png"
+  },
+  95: {
+    name: "Rhiannon",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Rhiannon ready for battle.",
+    image: "Rhiannon/Rhiannon_Garment1.png",
+    tabimage: "Rhiannon/Rhiannon_Garment1.png"
+  },
+  96: {
+    name: "Rubuska",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Rubuska ready for battle.",
+    image: "Rubuska/Rubuska_Garment1.png",
+    tabimage: "Rubuska/Rubuska_Garment1.png"
+  },
+  97: {
+    name: "Satsuki",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Satsuki ready for battle.",
+    image: "Satsuki/Satsuki_Garment1.png",
+    tabimage: "Satsuki/Satsuki_Garment1.png"
+  },
+  98: {
+    name: "Semmelweis",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Semmelweis ready for battle.",
+    image: "Semmelweis/Semmelweis_Garment1.png",
+    tabimage: "Semmelweis/Semmelweis_Garment1.png"
+  },
+  99: {
+    name: "Sentinel",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Sentinel ready for battle.",
+    image: "Sentinel/Sentinel_Garment1.png",
+    tabimage: "Sentinel/Sentinel_Garment1.png"
+  },
+  100: {
+    name: "Shamane",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Shamane ready for battle.",
+    image: "Shamane/Shamane_Garment1.png",
+    tabimage: "Shamane/Shamane_Garment1.png"
+  },
+  101: {
+    name: "Silverwing Eagle",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Silverwing Eagle ready for battle.",
+    image: "Silverwing_Eagle/Silverwing_Eagle_Garment1.png",
+    tabimage: "Silverwing_Eagle/Silverwing_Eagle_Garment1.png"
+  },
+  102: {
+    name: "Sonetto",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Sonetto ready for battle.",
+    image: "Sonetto/Sonetto_Garment1.png",
+    tabimage: "Sonetto/Sonetto_Garment1.png"
+  },
+  103: {
+    name: "Sotheby",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Sotheby ready for battle.",
+    image: "Sotheby/Sotheby_Garment1.png",
+    tabimage: "Sotheby/Sotheby_Garment1.png"
+  },
+  104: {
+    name: "Spathodea",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Spathodea ready for battle.",
+    image: "Spathodea/Spathodea_Garment1.png",
+    tabimage: "Spathodea/Spathodea_Garment1.png"
+  },
+  105: {
+    name: "Sputnik",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Sputnik ready for battle.",
+    image: "Sputnik/Sputnik_Garment1.png",
+    tabimage: "Sputnik/Sputnik_Garment1.png"
+  },
+  106: {
+    name: "Sweetheart",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Sweetheart ready for battle.",
+    image: "Sweetheart/Sweetheart_Garment1.png",
+    tabimage: "Sweetheart/Sweetheart_Garment1.png"
+  },
+  107: {
+    name: "Tennant",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Tennant ready for battle.",
+    image: "Tennant/Tennant_Garment1.png",
+    tabimage: "Tennant/Tennant_Garment1.png"
+  },
+  108: {
+    name: "The Fool",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "The Fool ready for battle.",
+    image: "The_Fool/The_Fool_Garment1.png",
+    tabimage: "The_Fool/The_Fool_Garment1.png"
+  },
+  109: {
+    name: "The Twins",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "The Twins ready for battle.",
+    image: "The_Twins/The_Twins_Garment1.png",
+    tabimage: "The_Twins/The_Twins_Garment1.png"
+  },
+  110: {
+    name: "Tooth Fairy",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Tooth Fairy ready for battle.",
+    image: "Tooth_Fairy/Tooth_Fairy_Garment1.png",
+    tabimage: "Tooth_Fairy/Tooth_Fairy_Garment1.png"
+  },
+  111: {
+    name: "TTT",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "TTT ready for battle.",
+    image: "TTT/TTT_Garment1.png",
+    tabimage: "TTT/TTT_Garment1.png"
+  },
+  112: {
+    name: "Tuesday",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Tuesday ready for battle.",
+    image: "Tuesday/Tuesday_Garment1.png",
+    tabimage: "Tuesday/Tuesday_Garment1.png"
+  },
+  113: {
+    name: "Twins Sleep",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Twins Sleep ready for battle.",
+    image: "Twins_Sleep/Twins_Sleep_Garment1.png",
+    tabimage: "Twins_Sleep/Twins_Sleep_Garment1.png"
+  },
+};
+
+const characterData = {
+  1: {
+    name: "37",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "37 character skin quote.",
+    image: "37/37_Garment1.png",
+    tabimage: "37/37_Garment1.png"
+  },
+  2: {
+    name: "6",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "6 character skin quote.",
+    image: "6/6_Garment1.png",
+    tabimage: "6/6_Garment1.png"
+  },
+  3: {
+    name: "Aleph",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Aleph character skin quote.",
+    image: "Aleph/Aleph_Garment1.png",
+    tabimage: "Aleph/Aleph_Garment1.png"
+  },
+  4: {
+    name: "Alexios",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Alexios character skin quote.",
+    image: "Alexios/Alexios_Garment1.png",
+    tabimage: "Alexios/Alexios_Garment1.png"
+  },
+  5: {
+    name: "AliEn T",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "AliEn T character skin quote.",
+    image: "AliEn_T/AliEn_T_Live2D.png",
+    tabimage: "AliEn_T/AliEn_T_Live2D.png"
+  },
+  6: {
+    name: "An an Lee",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "An an Lee character skin quote.",
+    image: "An-an_Lee/An-an_Lee_Garment1.png",
+    tabimage: "An-an_Lee/An-an_Lee_Garment1.png"
+  },
+  7: {
+    name: "Anjo Nala",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Anjo Nala character skin quote.",
+    image: "Anjo_Nala/Anjo_Nala_Garment1_Live2D.png",
+    tabimage: "Anjo_Nala/Anjo_Nala_Garment1_Live2D.png"
+  },
+  8: {
+    name: "APPLe",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "APPLe character skin quote.",
+    image: "APPLe/APPLe_Garment1.png",
+    tabimage: "APPLe/APPLe_Garment1.png"
+  },
+  9: {
+    name: "Argus",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Argus character skin quote.",
+    image: "Argus/Argus_Garment1.png",
+    tabimage: "Argus/Argus_Garment1.png"
+  },
+  10: {
+    name: "Avgust",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Avgust character skin quote.",
+    image: "Avgust/Avgust_Garment1.png",
+    tabimage: "Avgust/Avgust_Garment1.png"
+  },
+  11: {
+    name: "A Knight",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "A Knight character skin quote.",
+    image: "A_Knight/A_Knight_Garment1.png",
+    tabimage: "A_Knight/A_Knight_Garment1.png"
+  },
+  12: {
+    name: "Baby Blue",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Baby Blue character skin quote.",
+    image: "Baby_Blue/Baby_Blue_Garment1.png",
+    tabimage: "Baby_Blue/Baby_Blue_Garment1.png"
+  },
+  13: {
+    name: "Balloon Party",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Balloon Party character skin quote.",
+    image: "Balloon_Party/Balloon_Party_Garment1.png",
+    tabimage: "Balloon_Party/Balloon_Party_Garment1.png"
+  },
+  14: {
+    name: "Barbara",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Barbara character skin quote.",
+    image: "Barbara/Barbara_Garment1.png",
+    tabimage: "Barbara/Barbara_Garment1.png"
+  },
+  15: {
+    name: "Barcarola",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Barcarola character skin quote.",
+    image: "Barcarola/Barcarola_Garment1.png",
+    tabimage: "Barcarola/Barcarola_Garment1.png"
+  },
+  16: {
+    name: "Beryl",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Beryl character skin quote.",
+    image: "Beryl/Beryl_Garment1.png",
+    tabimage: "Beryl/Beryl_Garment1.png"
+  },
+  17: {
+    name: "Bkornblume",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Bkornblume character skin quote.",
+    image: "Bkornblume/Bkornblume_Garment1.png",
+    tabimage: "Bkornblume/Bkornblume_Garment1.png"
+  },
+  18: {
+    name: "Blonney",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Blonney character skin quote.",
+    image: "Blonney/Blonney_Garment1.png",
+    tabimage: "Blonney/Blonney_Garment1.png"
+  },
+  19: {
+    name: "Brimley",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Brimley character skin quote.",
+    image: "Brimley/Brimley_Garment1.png",
+    tabimage: "Brimley/Brimley_Garment1.png"
+  },
+  20: {
+    name: "Brume",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Brume character skin quote.",
+    image: "Brume/Brume_Garment1.png",
+    tabimage: "Brume/Brume_Garment1.png"
+  },
+  21: {
+    name: "Buddy Fairchild",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Buddy Fairchild character skin quote.",
+    image: "Buddy_Fairchild/Buddy_Fairchild_Garment1.png",
+    tabimage: "Buddy_Fairchild/Buddy_Fairchild_Garment1.png"
+  },
+  22: {
+    name: "Centurion",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Centurion character skin quote.",
+    image: "Centurion/Centurion_Garment1.png",
+    tabimage: "Centurion/Centurion_Garment1.png"
+  },
+  23: {
+    name: "Charlie",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Charlie character skin quote.",
+    image: "Charlie/Charlie_Garment1.png",
+    tabimage: "Charlie/Charlie_Garment1.png"
+  },
+  24: {
+    name: "Charon",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Charon character skin quote.",
+    image: "Charon/Charon_Garment1.png",
+    tabimage: "Charon/Charon_Garment1.png"
+  },
+  25: {
+    name: "Cheng Heguang",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Cheng Heguang character skin quote.",
+    image: "Cheng_Heguang/Cheng_Heguang_Garment1.png",
+    tabimage: "Cheng_Heguang/Cheng_Heguang_Garment1.png"
+  },
+  26: {
+    name: "Click",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Click character skin quote.",
+    image: "Click/Click_Garment1.png",
+    tabimage: "Click/Click_Garment1.png"
+  },
+  27: {
+    name: "Coppélia",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Coppélia character skin quote.",
+    image: "Coppélia/Coppélia_Garment1.png",
+    tabimage: "Coppélia/Coppélia_Garment1.png"
+  },
+  28: {
+    name: "Cornerstone",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Cornerstone character skin quote.",
+    image: "Cornerstone/Cornerstone_Garment1.png",
+    tabimage: "Cornerstone/Cornerstone_Garment1.png"
+  },
+  29: {
+    name: "Corvus",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Corvus character skin quote.",
+    image: "Corvus/Corvus_Garment1.png",
+    tabimage: "Corvus/Corvus_Garment1.png"
+  },
+  30: {
+    name: "Cristallo",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Cristallo character skin quote.",
+    image: "Cristallo/Cristallo_Garment1.png",
+    tabimage: "Cristallo/Cristallo_Garment1.png"
+  },
+  31: {
+    name: "Darley Clatter",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Darley Clatter character skin quote.",
+    image: "Darley_Clatter/Darley_Clatter_Garment1.png",
+    tabimage: "Darley_Clatter/Darley_Clatter_Garment1.png"
+  },
+  32: {
+    name: "Desert Flannel",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Desert Flannel character skin quote.",
+    image: "Desert_Flannel/Desert_Flannel_Garment1.png",
+    tabimage: "Desert_Flannel/Desert_Flannel_Garment1.png"
+  },
+  33: {
+    name: "Diggers",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Diggers character skin quote.",
+    image: "Diggers/Diggers_Garment1.png",
+    tabimage: "Diggers/Diggers_Garment1.png"
+  },
+  34: {
+    name: "Dikke",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Dikke character skin quote.",
+    image: "Dikke/Dikke_Garment1.png",
+    tabimage: "Dikke/Dikke_Garment1.png"
+  },
+  35: {
+    name: "Door",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Door character skin quote.",
+    image: "Door/Door_Live2D.png",
+    tabimage: "Door/Door_Live2D.png"
+  },
+  36: {
+    name: "Druvis III",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Druvis III character skin quote.",
+    image: "Druvis_III/Druvis_III_Garment1.png",
+    tabimage: "Druvis_III/Druvis_III_Garment1.png"
+  },
+  37: {
+    name: "Eagle",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Eagle character skin quote.",
+    image: "Eagle/Eagle_Garment1.png",
+    tabimage: "Eagle/Eagle_Garment1.png"
+  },
+  38: {
+    name: "Enigma",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Enigma character skin quote.",
+    image: "Enigma/Enigma_Garment1.png",
+    tabimage: "Enigma/Enigma_Garment1.png"
+  },
+  39: {
+    name: "Erick",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Erick character skin quote.",
+    image: "Erick/Erick_Garment1.png",
+    tabimage: "Erick/Erick_Garment1.png"
+  },
+  40: {
+    name: "Eternity",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Eternity character skin quote.",
+    image: "Eternity/Eternity_Garment1.png",
+    tabimage: "Eternity/Eternity_Garment1.png"
+  },
+  41: {
+    name: "Everecho",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Everecho character skin quote.",
+    image: "Everecho/Everecho_Garment1.png",
+    tabimage: "Everecho/Everecho_Garment1.png"
+  },
+  42: {
+    name: "Ezio Auditore",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Ezio Auditore character skin quote.",
+    image: "Ezio_Auditore/Ezio_Auditore_Garment1.png",
+    tabimage: "Ezio_Auditore/Ezio_Auditore_Garment1.png"
+  },
+  43: {
+    name: "Ezra",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Ezra character skin quote.",
+    image: "Ezra/Ezra_Garment1.png",
+    tabimage: "Ezra/Ezra_Garment1.png"
+  },
+  44: {
+    name: "Fatutu",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Fatutu character skin quote.",
+    image: "Fatutu/Fatutu_Garment1.png",
+    tabimage: "Fatutu/Fatutu_Garment1.png"
+  },
+  45: {
+    name: "Flutterpage",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Flutterpage character skin quote.",
+    image: "Flutterpage/Flutterpage_Garment1.png",
+    tabimage: "Flutterpage/Flutterpage_Garment1.png"
+  },
+  46: {
+    name: "Getian",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Getian character skin quote.",
+    image: "Getian/Getian_Garment1.png",
+    tabimage: "Getian/Getian_Garment1.png"
+  },
+  47: {
+    name: "Hissabeth",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Hissabeth character skin quote.",
+    image: "Hissabeth/Hissabeth_Garment1.png",
+    tabimage: "Hissabeth/Hissabeth_Garment1.png"
+  },
+  48: {
+    name: "Horropedia",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Horropedia character skin quote.",
+    image: "Horropedia/Horropedia_Garment1.png",
+    tabimage: "Horropedia/Horropedia_Garment1.png"
+  },
+  49: {
+    name: "Igor",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Igor character skin quote.",
+    image: "Igor/Igor_Garment1.png",
+    tabimage: "Igor/Igor_Garment1.png"
+  },
+  50: {
+    name: "Isabella",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Isabella character skin quote.",
+    image: "Isabella/Isabella.png",
+    tabimage: "Isabella/Isabella.png"
+  },
+  51: {
+    name: "Isolde",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Isolde character skin quote.",
+    image: "Isolde/Isolde_Garment1.png",
+    tabimage: "Isolde/Isolde_Garment1.png"
+  },
+  52: {
+    name: "J",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "J character skin quote.",
+    image: "J/J_Garment1.png",
+    tabimage: "J/J_Garment1.png"
+  },
+  53: {
+    name: "Jessica",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Jessica character skin quote.",
+    image: "Jessica/Jessica_Garment1.png",
+    tabimage: "Jessica/Jessica_Garment1.png"
+  },
+  54: {
+    name: "Jiu Niangzi",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Jiu Niangzi character skin quote.",
+    image: "Jiu_Niangzi/Jiu_Niangzi_Garment1.png",
+    tabimage: "Jiu_Niangzi/Jiu_Niangzi_Garment1.png"
+  },
+  55: {
+    name: "John Titor",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "John Titor character skin quote.",
+    image: "John_Titor/John_Titor_Garment1.png",
+    tabimage: "John_Titor/John_Titor_Garment1.png"
+  },
+  56: {
+    name: "Kaalaa Baunaa",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Kaalaa Baunaa character skin quote.",
+    image: "Kaalaa_Baunaa/Kaalaa_Baunaa_Garment1.png",
+    tabimage: "Kaalaa_Baunaa/Kaalaa_Baunaa_Garment1.png"
+  },
+  57: {
+    name: "Kakania",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Kakania character skin quote.",
+    image: "Kakania/Kakania_Garment1.png",
+    tabimage: "Kakania/Kakania_Garment1.png"
+  },
+  58: {
+    name: "Kanjira",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Kanjira character skin quote.",
+    image: "Kanjira/Kanjira_Garment1.png",
+    tabimage: "Kanjira/Kanjira_Garment1.png"
+  },
+  59: {
+    name: "Kassandra",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Kassandra character skin quote.",
+    image: "Kassandra/Kassandra_Garment1.png",
+    tabimage: "Kassandra/Kassandra_Garment1.png"
+  },
+  60: {
+    name: "Leilani",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Leilani character skin quote.",
+    image: "Leilani/Leilani_Garment1.png",
+    tabimage: "Leilani/Leilani_Garment1.png"
+  },
+  61: {
+    name: "Liang Yue",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Liang Yue character skin quote.",
+    image: "Liang_Yue/Liang_Yue_Garment1.png",
+    tabimage: "Liang_Yue/Liang_Yue_Garment1.png"
+  },
+  62: {
+    name: "Lilya",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Lilya character skin quote.",
+    image: "Lilya/Lilya_Garment1.png",
+    tabimage: "Lilya/Lilya_Garment1.png"
+  },
+  63: {
+    name: "Loggerhead",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Loggerhead character skin quote.",
+    image: "Loggerhead/Loggerhead_Garment1.png",
+    tabimage: "Loggerhead/Loggerhead_Garment1.png"
+  },
+  64: {
+    name: "Lopera",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Lopera character skin quote.",
+    image: "Lopera/Lopera_Garment1.png",
+    tabimage: "Lopera/Lopera_Garment1.png"
+  },
+  65: {
+    name: "Lorelei",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Lorelei character skin quote.",
+    image: "Lorelei/Lorelei_Garment1.png",
+    tabimage: "Lorelei/Lorelei_Garment1.png"
+  },
+  66: {
+    name: "Lorentz Butterfly",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Lorentz Butterfly character skin quote.",
+    image: "Lorentz_Butterfly/Lorentz_Butterfly_Garment1.png",
+    tabimage: "Lorentz_Butterfly/Lorentz_Butterfly_Garment1.png"
+  },
+  67: {
+    name: "Lucy",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Lucy character skin quote.",
+    image: "Lucy/Lucy_Garment1.png",
+    tabimage: "Lucy/Lucy_Garment1.png"
+  },
+  68: {
+    name: "Marcus",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Marcus character skin quote.",
+    image: "Marcus/Marcus_Garment1.png",
+    tabimage: "Marcus/Marcus_Garment1.png"
+  },
+  69: {
+    name: "Marsha",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Marsha character skin quote.",
+    image: "Marsha/Marsha_Garment1.png",
+    tabimage: "Marsha/Marsha_Garment1.png"
+  },
+  70: {
+    name: "Matilda",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Matilda character skin quote.",
+    image: "Matilda/Matilda_Garment1.png",
+    tabimage: "Matilda/Matilda_Garment1.png"
+  },
+  71: {
+    name: "Melania",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Melania character skin quote.",
+    image: "Melania/Melania_Garment1.png",
+    tabimage: "Melania/Melania_Garment1.png"
+  },
+  72: {
+    name: "Mercuria",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Mercuria character skin quote.",
+    image: "Mercuria/Mercuria_Garment1.png",
+    tabimage: "Mercuria/Mercuria_Garment1.png"
+  },
+  73: {
+    name: "Mesmer Jr",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Mesmer Jr character skin quote.",
+    image: "Mesmer_Jr/Mesmer_Jr._Garment1.png",
+    tabimage: "Mesmer_Jr/Mesmer_Jr._Garment1.png"
+  },
+  74: {
+    name: "Moldir",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Moldir character skin quote.",
+    image: "Moldir/Moldir_Garment1.png",
+    tabimage: "Moldir/Moldir_Garment1.png"
+  },
+  75: {
+    name: "Mondlicht",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Mondlicht character skin quote.",
+    image: "Mondlicht/Mondlicht_Garment1.png",
+    tabimage: "Mondlicht/Mondlicht_Garment1.png"
+  },
+  76: {
+    name: "mp",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "mp character skin quote.",
+    image: "mp/Medicine_Pocket_Garment1.png",
+    tabimage: "mp/Medicine_Pocket_Garment1.png"
+  },
+  77: {
+    name: "Ms. NewBabel",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Ms. NewBabel character skin quote.",
+    image: "Ms._NewBabel/Ms._NewBabel_Garment1.png",
+    tabimage: "Ms._NewBabel/Ms._NewBabel_Garment1.png"
+  },
+  78: {
+    name: "Ms. Stranger",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Ms. Stranger character skin quote.",
+    image: "Ms._Stranger/Ms._Stranger_Garment1.png",
+    tabimage: "Ms._Stranger/Ms._Stranger_Garment1.png"
+  },
+  79: {
+    name: "Name Day",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Name Day character skin quote.",
+    image: "Name_Day/Name_Day_Garment1.png",
+    tabimage: "Name_Day/Name_Day_Garment1.png"
+  },
+  80: {
+    name: "Nautika",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Nautika character skin quote.",
+    image: "Nautika/Nautika_Garment1.png",
+    tabimage: "Nautika/Nautika_Garment1.png"
+  },
+  81: {
+    name: "Necrologist",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Necrologist character skin quote.",
+    image: "Necrologist/Necrologist_Garment1.png",
+    tabimage: "Necrologist/Necrologist_Garment1.png"
+  },
+  82: {
+    name: "Nick Bottom",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Nick Bottom character skin quote.",
+    image: "Nick_Bottom/Nick_Bottom_Garment1.png",
+    tabimage: "Nick_Bottom/Nick_Bottom_Garment1.png"
+  },
+  83: {
+    name: "Noire",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Noire character skin quote.",
+    image: "Noire/Noire_Garment1.png",
+    tabimage: "Noire/Noire_Garment1.png"
+  },
+  84: {
+    name: "NORA",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "NORA character skin quote.",
+    image: "NORA/NORA_Garment1.png",
+    tabimage: "NORA/NORA_Garment1.png"
+  },
+  85: {
+    name: "Oliver Fog",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Oliver Fog character skin quote.",
+    image: "Oliver_Fog/Oliver_Fog_Garment1.png",
+    tabimage: "Oliver_Fog/Oliver_Fog_Garment1.png"
+  },
+  86: {
+    name: "ONiON",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "ONiON character skin quote.",
+    image: "ONiON/ONiON_Live2D.png",
+    tabimage: "ONiON/ONiON_Live2D.png"
+  },
+  87: {
+    name: "Paper Heron",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Paper Heron character skin quote.",
+    image: "Paper_Heron/Paper_Heron_Garment1.png",
+    tabimage: "Paper_Heron/Paper_Heron_Garment1.png"
+  },
+  88: {
+    name: "Pavia",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Pavia character skin quote.",
+    image: "Pavia/Pavia_Garment1.png",
+    tabimage: "Pavia/Pavia_Garment1.png"
+  },
+  89: {
+    name: "Pickles",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Pickles character skin quote.",
+    image: "Pickles/Pickles_Garment1.png",
+    tabimage: "Pickles/Pickles_Garment1.png"
+  },
+  90: {
+    name: "Pioneer",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Pioneer character skin quote.",
+    image: "Pioneer/Pioneer_Garment1.png",
+    tabimage: "Pioneer/Pioneer_Garment1.png"
+  },
+  91: {
+    name: "Ramona",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Ramona character skin quote.",
+    image: "Ramona/Ramona_Garment1.png",
+    tabimage: "Ramona/Ramona_Garment1.png"
+  },
+  92: {
+    name: "Recoleta",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Recoleta character skin quote.",
+    image: "Recoleta/Recoleta_Garment1.png",
+    tabimage: "Recoleta/Recoleta_Garment1.png"
+  },
+  93: {
+    name: "Reed",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Reed character skin quote.",
+    image: "Reed/Reed_Garment1.png",
+    tabimage: "Reed/Reed_Garment1.png"
+  },
+  94: {
+    name: "Regulus",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Regulus character skin quote.",
+    image: "Regulus/Regulus_Garment1.png",
+    tabimage: "Regulus/Regulus_Garment1.png"
+  },
+  95: {
+    name: "Rhiannon",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Rhiannon character skin quote.",
+    image: "Rhiannon/Rhiannon_Garment1.png",
+    tabimage: "Rhiannon/Rhiannon_Garment1.png"
+  },
+  96: {
+    name: "Rubuska",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Rubuska character skin quote.",
+    image: "Rubuska/Rubuska_Garment1.png",
+    tabimage: "Rubuska/Rubuska_Garment1.png"
+  },
+  97: {
+    name: "Satsuki",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Satsuki character skin quote.",
+    image: "Satsuki/Satsuki_Garment1.png",
+    tabimage: "Satsuki/Satsuki_Garment1.png"
+  },
+  98: {
+    name: "Semmelweis",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Semmelweis character skin quote.",
+    image: "Semmelweis/Semmelweis_Garment1.png",
+    tabimage: "Semmelweis/Semmelweis_Garment1.png"
+  },
+  99: {
+    name: "Sentinel",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Sentinel character skin quote.",
+    image: "Sentinel/Sentinel_Garment1.png",
+    tabimage: "Sentinel/Sentinel_Garment1.png"
+  },
+  100: {
+    name: "Shamane",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Shamane character skin quote.",
+    image: "Shamane/Shamane_Garment1.png",
+    tabimage: "Shamane/Shamane_Garment1.png"
+  },
+  101: {
+    name: "Silverwing Eagle",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Silverwing Eagle character skin quote.",
+    image: "Silverwing_Eagle/Silverwing_Eagle_Garment1.png",
+    tabimage: "Silverwing_Eagle/Silverwing_Eagle_Garment1.png"
+  },
+  102: {
+    name: "Sonetto",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Sonetto character skin quote.",
+    image: "Sonetto/Sonetto_Garment1.png",
+    tabimage: "Sonetto/Sonetto_Garment1.png"
+  },
+  103: {
+    name: "Sotheby",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Sotheby character skin quote.",
+    image: "Sotheby/Sotheby_Garment1.png",
+    tabimage: "Sotheby/Sotheby_Garment1.png"
+  },
+  104: {
+    name: "Spathodea",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Spathodea character skin quote.",
+    image: "Spathodea/Spathodea_Garment1.png",
+    tabimage: "Spathodea/Spathodea_Garment1.png"
+  },
+  105: {
+    name: "Sputnik",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Sputnik character skin quote.",
+    image: "Sputnik/Sputnik_Garment1.png",
+    tabimage: "Sputnik/Sputnik_Garment1.png"
+  },
+  106: {
+    name: "Sweetheart",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Sweetheart character skin quote.",
+    image: "Sweetheart/Sweetheart_Garment1.png",
+    tabimage: "Sweetheart/Sweetheart_Garment1.png"
+  },
+  107: {
+    name: "Tennant",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Tennant character skin quote.",
+    image: "Tennant/Tennant_Garment1.png",
+    tabimage: "Tennant/Tennant_Garment1.png"
+  },
+  108: {
+    name: "The Fool",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "The Fool character skin quote.",
+    image: "The_Fool/The_Fool_Garment1.png",
+    tabimage: "The_Fool/The_Fool_Garment1.png"
+  },
+  109: {
+    name: "The Twins",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "The Twins character skin quote.",
+    image: "The_Twins/The_Twins_Garment1.png",
+    tabimage: "The_Twins/The_Twins_Garment1.png"
+  },
+  110: {
+    name: "Tooth Fairy",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Tooth Fairy character skin quote.",
+    image: "Tooth_Fairy/Tooth_Fairy_Garment1.png",
+    tabimage: "Tooth_Fairy/Tooth_Fairy_Garment1.png"
+  },
+  111: {
+    name: "TTT",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "TTT character skin quote.",
+    image: "TTT/TTT_Garment1.png",
+    tabimage: "TTT/TTT_Garment1.png"
+  },
+  112: {
+    name: "Tuesday",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Tuesday character skin quote.",
+    image: "Tuesday/Tuesday_Garment1.png",
+    tabimage: "Tuesday/Tuesday_Garment1.png"
+  },
+  113: {
+    name: "Twins Sleep",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Twins Sleep character skin quote.",
+    image: "Twins_Sleep/Twins_Sleep_Garment1.png",
+    tabimage: "Twins_Sleep/Twins_Sleep_Garment1.png"
+  },
+};
+
+const weaponData = {
+  1: {
+    name: "37",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "37 weapon skin quote.",
+    image: "37/37_Garment1.png",
+    tabimage: "37/37_Garment1.png"
+  },
+  2: {
+    name: "6",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "6 weapon skin quote.",
+    image: "6/6_Garment1.png",
+    tabimage: "6/6_Garment1.png"
+  },
+  3: {
+    name: "Aleph",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Aleph weapon skin quote.",
+    image: "Aleph/Aleph_Garment1.png",
+    tabimage: "Aleph/Aleph_Garment1.png"
+  },
+  4: {
+    name: "Alexios",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Alexios weapon skin quote.",
+    image: "Alexios/Alexios_Garment1.png",
+    tabimage: "Alexios/Alexios_Garment1.png"
+  },
+  5: {
+    name: "AliEn T",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "AliEn T weapon skin quote.",
+    image: "AliEn_T/AliEn_T_Live2D.png",
+    tabimage: "AliEn_T/AliEn_T_Live2D.png"
+  },
+  6: {
+    name: "An an Lee",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "An an Lee weapon skin quote.",
+    image: "An-an_Lee/An-an_Lee_Garment1.png",
+    tabimage: "An-an_Lee/An-an_Lee_Garment1.png"
+  },
+  7: {
+    name: "Anjo Nala",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Anjo Nala weapon skin quote.",
+    image: "Anjo_Nala/Anjo_Nala_Garment1_Live2D.png",
+    tabimage: "Anjo_Nala/Anjo_Nala_Garment1_Live2D.png"
+  },
+  8: {
+    name: "APPLe",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "APPLe weapon skin quote.",
+    image: "APPLe/APPLe_Garment1.png",
+    tabimage: "APPLe/APPLe_Garment1.png"
+  },
+  9: {
+    name: "Argus",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Argus weapon skin quote.",
+    image: "Argus/Argus_Garment1.png",
+    tabimage: "Argus/Argus_Garment1.png"
+  },
+  10: {
+    name: "Avgust",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Avgust weapon skin quote.",
+    image: "Avgust/Avgust_Garment1.png",
+    tabimage: "Avgust/Avgust_Garment1.png"
+  },
+  11: {
+    name: "A Knight",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "A Knight weapon skin quote.",
+    image: "A_Knight/A_Knight_Garment1.png",
+    tabimage: "A_Knight/A_Knight_Garment1.png"
+  },
+  12: {
+    name: "Baby Blue",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Baby Blue weapon skin quote.",
+    image: "Baby_Blue/Baby_Blue_Garment1.png",
+    tabimage: "Baby_Blue/Baby_Blue_Garment1.png"
+  },
+  13: {
+    name: "Balloon Party",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Balloon Party weapon skin quote.",
+    image: "Balloon_Party/Balloon_Party_Garment1.png",
+    tabimage: "Balloon_Party/Balloon_Party_Garment1.png"
+  },
+  14: {
+    name: "Barbara",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Barbara weapon skin quote.",
+    image: "Barbara/Barbara_Garment1.png",
+    tabimage: "Barbara/Barbara_Garment1.png"
+  },
+  15: {
+    name: "Barcarola",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Barcarola weapon skin quote.",
+    image: "Barcarola/Barcarola_Garment1.png",
+    tabimage: "Barcarola/Barcarola_Garment1.png"
+  },
+  16: {
+    name: "Beryl",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Beryl weapon skin quote.",
+    image: "Beryl/Beryl_Garment1.png",
+    tabimage: "Beryl/Beryl_Garment1.png"
+  },
+  17: {
+    name: "Bkornblume",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Bkornblume weapon skin quote.",
+    image: "Bkornblume/Bkornblume_Garment1.png",
+    tabimage: "Bkornblume/Bkornblume_Garment1.png"
+  },
+  18: {
+    name: "Blonney",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Blonney weapon skin quote.",
+    image: "Blonney/Blonney_Garment1.png",
+    tabimage: "Blonney/Blonney_Garment1.png"
+  },
+  19: {
+    name: "Brimley",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Brimley weapon skin quote.",
+    image: "Brimley/Brimley_Garment1.png",
+    tabimage: "Brimley/Brimley_Garment1.png"
+  },
+  20: {
+    name: "Brume",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Brume weapon skin quote.",
+    image: "Brume/Brume_Garment1.png",
+    tabimage: "Brume/Brume_Garment1.png"
+  },
+  21: {
+    name: "Buddy Fairchild",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Buddy Fairchild weapon skin quote.",
+    image: "Buddy_Fairchild/Buddy_Fairchild_Garment1.png",
+    tabimage: "Buddy_Fairchild/Buddy_Fairchild_Garment1.png"
+  },
+  22: {
+    name: "Centurion",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Centurion weapon skin quote.",
+    image: "Centurion/Centurion_Garment1.png",
+    tabimage: "Centurion/Centurion_Garment1.png"
+  },
+  23: {
+    name: "Charlie",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Charlie weapon skin quote.",
+    image: "Charlie/Charlie_Garment1.png",
+    tabimage: "Charlie/Charlie_Garment1.png"
+  },
+  24: {
+    name: "Charon",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Charon weapon skin quote.",
+    image: "Charon/Charon_Garment1.png",
+    tabimage: "Charon/Charon_Garment1.png"
+  },
+  25: {
+    name: "Cheng Heguang",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Cheng Heguang weapon skin quote.",
+    image: "Cheng_Heguang/Cheng_Heguang_Garment1.png",
+    tabimage: "Cheng_Heguang/Cheng_Heguang_Garment1.png"
+  },
+  26: {
+    name: "Click",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Click weapon skin quote.",
+    image: "Click/Click_Garment1.png",
+    tabimage: "Click/Click_Garment1.png"
+  },
+  27: {
+    name: "Coppélia",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Coppélia weapon skin quote.",
+    image: "Coppélia/Coppélia_Garment1.png",
+    tabimage: "Coppélia/Coppélia_Garment1.png"
+  },
+  28: {
+    name: "Cornerstone",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Cornerstone weapon skin quote.",
+    image: "Cornerstone/Cornerstone_Garment1.png",
+    tabimage: "Cornerstone/Cornerstone_Garment1.png"
+  },
+  29: {
+    name: "Corvus",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Corvus weapon skin quote.",
+    image: "Corvus/Corvus_Garment1.png",
+    tabimage: "Corvus/Corvus_Garment1.png"
+  },
+  30: {
+    name: "Cristallo",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Cristallo weapon skin quote.",
+    image: "Cristallo/Cristallo_Garment1.png",
+    tabimage: "Cristallo/Cristallo_Garment1.png"
+  },
+  31: {
+    name: "Darley Clatter",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Darley Clatter weapon skin quote.",
+    image: "Darley_Clatter/Darley_Clatter_Garment1.png",
+    tabimage: "Darley_Clatter/Darley_Clatter_Garment1.png"
+  },
+  32: {
+    name: "Desert Flannel",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Desert Flannel weapon skin quote.",
+    image: "Desert_Flannel/Desert_Flannel_Garment1.png",
+    tabimage: "Desert_Flannel/Desert_Flannel_Garment1.png"
+  },
+  33: {
+    name: "Diggers",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Diggers weapon skin quote.",
+    image: "Diggers/Diggers_Garment1.png",
+    tabimage: "Diggers/Diggers_Garment1.png"
+  },
+  34: {
+    name: "Dikke",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Dikke weapon skin quote.",
+    image: "Dikke/Dikke_Garment1.png",
+    tabimage: "Dikke/Dikke_Garment1.png"
+  },
+  35: {
+    name: "Door",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Door weapon skin quote.",
+    image: "Door/Door_Live2D.png",
+    tabimage: "Door/Door_Live2D.png"
+  },
+  36: {
+    name: "Druvis III",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Druvis III weapon skin quote.",
+    image: "Druvis_III/Druvis_III_Garment1.png",
+    tabimage: "Druvis_III/Druvis_III_Garment1.png"
+  },
+  37: {
+    name: "Eagle",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Eagle weapon skin quote.",
+    image: "Eagle/Eagle_Garment1.png",
+    tabimage: "Eagle/Eagle_Garment1.png"
+  },
+  38: {
+    name: "Enigma",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Enigma weapon skin quote.",
+    image: "Enigma/Enigma_Garment1.png",
+    tabimage: "Enigma/Enigma_Garment1.png"
+  },
+  39: {
+    name: "Erick",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Erick weapon skin quote.",
+    image: "Erick/Erick_Garment1.png",
+    tabimage: "Erick/Erick_Garment1.png"
+  },
+  40: {
+    name: "Eternity",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Eternity weapon skin quote.",
+    image: "Eternity/Eternity_Garment1.png",
+    tabimage: "Eternity/Eternity_Garment1.png"
+  },
+  41: {
+    name: "Everecho",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Everecho weapon skin quote.",
+    image: "Everecho/Everecho_Garment1.png",
+    tabimage: "Everecho/Everecho_Garment1.png"
+  },
+  42: {
+    name: "Ezio Auditore",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Ezio Auditore weapon skin quote.",
+    image: "Ezio_Auditore/Ezio_Auditore_Garment1.png",
+    tabimage: "Ezio_Auditore/Ezio_Auditore_Garment1.png"
+  },
+  43: {
+    name: "Ezra",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Ezra weapon skin quote.",
+    image: "Ezra/Ezra_Garment1.png",
+    tabimage: "Ezra/Ezra_Garment1.png"
+  },
+  44: {
+    name: "Fatutu",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Fatutu weapon skin quote.",
+    image: "Fatutu/Fatutu_Garment1.png",
+    tabimage: "Fatutu/Fatutu_Garment1.png"
+  },
+  45: {
+    name: "Flutterpage",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Flutterpage weapon skin quote.",
+    image: "Flutterpage/Flutterpage_Garment1.png",
+    tabimage: "Flutterpage/Flutterpage_Garment1.png"
+  },
+  46: {
+    name: "Getian",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Getian weapon skin quote.",
+    image: "Getian/Getian_Garment1.png",
+    tabimage: "Getian/Getian_Garment1.png"
+  },
+  47: {
+    name: "Hissabeth",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Hissabeth weapon skin quote.",
+    image: "Hissabeth/Hissabeth_Garment1.png",
+    tabimage: "Hissabeth/Hissabeth_Garment1.png"
+  },
+  48: {
+    name: "Horropedia",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Horropedia weapon skin quote.",
+    image: "Horropedia/Horropedia_Garment1.png",
+    tabimage: "Horropedia/Horropedia_Garment1.png"
+  },
+  49: {
+    name: "Igor",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Igor weapon skin quote.",
+    image: "Igor/Igor_Garment1.png",
+    tabimage: "Igor/Igor_Garment1.png"
+  },
+  50: {
+    name: "Isabella",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Isabella weapon skin quote.",
+    image: "Isabella/Isabella.png",
+    tabimage: "Isabella/Isabella.png"
+  },
+  51: {
+    name: "Isolde",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Isolde weapon skin quote.",
+    image: "Isolde/Isolde_Garment1.png",
+    tabimage: "Isolde/Isolde_Garment1.png"
+  },
+  52: {
+    name: "J",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "J weapon skin quote.",
+    image: "J/J_Garment1.png",
+    tabimage: "J/J_Garment1.png"
+  },
+  53: {
+    name: "Jessica",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Jessica weapon skin quote.",
+    image: "Jessica/Jessica_Garment1.png",
+    tabimage: "Jessica/Jessica_Garment1.png"
+  },
+  54: {
+    name: "Jiu Niangzi",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Jiu Niangzi weapon skin quote.",
+    image: "Jiu_Niangzi/Jiu_Niangzi_Garment1.png",
+    tabimage: "Jiu_Niangzi/Jiu_Niangzi_Garment1.png"
+  },
+  55: {
+    name: "John Titor",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "John Titor weapon skin quote.",
+    image: "John_Titor/John_Titor_Garment1.png",
+    tabimage: "John_Titor/John_Titor_Garment1.png"
+  },
+  56: {
+    name: "Kaalaa Baunaa",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Kaalaa Baunaa weapon skin quote.",
+    image: "Kaalaa_Baunaa/Kaalaa_Baunaa_Garment1.png",
+    tabimage: "Kaalaa_Baunaa/Kaalaa_Baunaa_Garment1.png"
+  },
+  57: {
+    name: "Kakania",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Kakania weapon skin quote.",
+    image: "Kakania/Kakania_Garment1.png",
+    tabimage: "Kakania/Kakania_Garment1.png"
+  },
+  58: {
+    name: "Kanjira",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Kanjira weapon skin quote.",
+    image: "Kanjira/Kanjira_Garment1.png",
+    tabimage: "Kanjira/Kanjira_Garment1.png"
+  },
+  59: {
+    name: "Kassandra",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Kassandra weapon skin quote.",
+    image: "Kassandra/Kassandra_Garment1.png",
+    tabimage: "Kassandra/Kassandra_Garment1.png"
+  },
+  60: {
+    name: "Leilani",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Leilani weapon skin quote.",
+    image: "Leilani/Leilani_Garment1.png",
+    tabimage: "Leilani/Leilani_Garment1.png"
+  },
+  61: {
+    name: "Liang Yue",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Liang Yue weapon skin quote.",
+    image: "Liang_Yue/Liang_Yue_Garment1.png",
+    tabimage: "Liang_Yue/Liang_Yue_Garment1.png"
+  },
+  62: {
+    name: "Lilya",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Lilya weapon skin quote.",
+    image: "Lilya/Lilya_Garment1.png",
+    tabimage: "Lilya/Lilya_Garment1.png"
+  },
+  63: {
+    name: "Loggerhead",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Loggerhead weapon skin quote.",
+    image: "Loggerhead/Loggerhead_Garment1.png",
+    tabimage: "Loggerhead/Loggerhead_Garment1.png"
+  },
+  64: {
+    name: "Lopera",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Lopera weapon skin quote.",
+    image: "Lopera/Lopera_Garment1.png",
+    tabimage: "Lopera/Lopera_Garment1.png"
+  },
+  65: {
+    name: "Lorelei",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Lorelei weapon skin quote.",
+    image: "Lorelei/Lorelei_Garment1.png",
+    tabimage: "Lorelei/Lorelei_Garment1.png"
+  },
+  66: {
+    name: "Lorentz Butterfly",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Lorentz Butterfly weapon skin quote.",
+    image: "Lorentz_Butterfly/Lorentz_Butterfly_Garment1.png",
+    tabimage: "Lorentz_Butterfly/Lorentz_Butterfly_Garment1.png"
+  },
+  67: {
+    name: "Lucy",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Lucy weapon skin quote.",
+    image: "Lucy/Lucy_Garment1.png",
+    tabimage: "Lucy/Lucy_Garment1.png"
+  },
+  68: {
+    name: "Marcus",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Marcus weapon skin quote.",
+    image: "Marcus/Marcus_Garment1.png",
+    tabimage: "Marcus/Marcus_Garment1.png"
+  },
+  69: {
+    name: "Marsha",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "Marsha weapon skin quote.",
+    image: "Marsha/Marsha_Garment1.png",
+    tabimage: "Marsha/Marsha_Garment1.png"
+  },
+  70: {
+    name: "Matilda",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Matilda weapon skin quote.",
+    image: "Matilda/Matilda_Garment1.png",
+    tabimage: "Matilda/Matilda_Garment1.png"
+  },
+  71: {
+    name: "Melania",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Melania weapon skin quote.",
+    image: "Melania/Melania_Garment1.png",
+    tabimage: "Melania/Melania_Garment1.png"
+  },
+  72: {
+    name: "Mercuria",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Mercuria weapon skin quote.",
+    image: "Mercuria/Mercuria_Garment1.png",
+    tabimage: "Mercuria/Mercuria_Garment1.png"
+  },
+  73: {
+    name: "Mesmer Jr",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Mesmer Jr weapon skin quote.",
+    image: "Mesmer_Jr/Mesmer_Jr._Garment1.png",
+    tabimage: "Mesmer_Jr/Mesmer_Jr._Garment1.png"
+  },
+  74: {
+    name: "Moldir",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Moldir weapon skin quote.",
+    image: "Moldir/Moldir_Garment1.png",
+    tabimage: "Moldir/Moldir_Garment1.png"
+  },
+  75: {
+    name: "Mondlicht",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Mondlicht weapon skin quote.",
+    image: "Mondlicht/Mondlicht_Garment1.png",
+    tabimage: "Mondlicht/Mondlicht_Garment1.png"
+  },
+  76: {
+    name: "mp",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "mp weapon skin quote.",
+    image: "mp/Medicine_Pocket_Garment1.png",
+    tabimage: "mp/Medicine_Pocket_Garment1.png"
+  },
+  77: {
+    name: "Ms. NewBabel",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Ms. NewBabel weapon skin quote.",
+    image: "Ms._NewBabel/Ms._NewBabel_Garment1.png",
+    tabimage: "Ms._NewBabel/Ms._NewBabel_Garment1.png"
+  },
+  78: {
+    name: "Ms. Stranger",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Ms. Stranger weapon skin quote.",
+    image: "Ms._Stranger/Ms._Stranger_Garment1.png",
+    tabimage: "Ms._Stranger/Ms._Stranger_Garment1.png"
+  },
+  79: {
+    name: "Name Day",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Name Day weapon skin quote.",
+    image: "Name_Day/Name_Day_Garment1.png",
+    tabimage: "Name_Day/Name_Day_Garment1.png"
+  },
+  80: {
+    name: "Nautika",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Nautika weapon skin quote.",
+    image: "Nautika/Nautika_Garment1.png",
+    tabimage: "Nautika/Nautika_Garment1.png"
+  },
+  81: {
+    name: "Necrologist",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "Necrologist weapon skin quote.",
+    image: "Necrologist/Necrologist_Garment1.png",
+    tabimage: "Necrologist/Necrologist_Garment1.png"
+  },
+  82: {
+    name: "Nick Bottom",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Nick Bottom weapon skin quote.",
+    image: "Nick_Bottom/Nick_Bottom_Garment1.png",
+    tabimage: "Nick_Bottom/Nick_Bottom_Garment1.png"
+  },
+  83: {
+    name: "Noire",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Healer" }],
+    quote: "Noire weapon skin quote.",
+    image: "Noire/Noire_Garment1.png",
+    tabimage: "Noire/Noire_Garment1.png"
+  },
+  84: {
+    name: "NORA",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "NORA weapon skin quote.",
+    image: "NORA/NORA_Garment1.png",
+    tabimage: "NORA/NORA_Garment1.png"
+  },
+  85: {
+    name: "Oliver Fog",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Oliver Fog weapon skin quote.",
+    image: "Oliver_Fog/Oliver_Fog_Garment1.png",
+    tabimage: "Oliver_Fog/Oliver_Fog_Garment1.png"
+  },
+  86: {
+    name: "ONiON",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "ONiON weapon skin quote.",
+    image: "ONiON/ONiON_Live2D.png",
+    tabimage: "ONiON/ONiON_Live2D.png"
+  },
+  87: {
+    name: "Paper Heron",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Paper Heron weapon skin quote.",
+    image: "Paper_Heron/Paper_Heron_Garment1.png",
+    tabimage: "Paper_Heron/Paper_Heron_Garment1.png"
+  },
+  88: {
+    name: "Pavia",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Pavia weapon skin quote.",
+    image: "Pavia/Pavia_Garment1.png",
+    tabimage: "Pavia/Pavia_Garment1.png"
+  },
+  89: {
+    name: "Pickles",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Pickles weapon skin quote.",
+    image: "Pickles/Pickles_Garment1.png",
+    tabimage: "Pickles/Pickles_Garment1.png"
+  },
+  90: {
+    name: "Pioneer",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Pioneer weapon skin quote.",
+    image: "Pioneer/Pioneer_Garment1.png",
+    tabimage: "Pioneer/Pioneer_Garment1.png"
+  },
+  91: {
+    name: "Ramona",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Ramona weapon skin quote.",
+    image: "Ramona/Ramona_Garment1.png",
+    tabimage: "Ramona/Ramona_Garment1.png"
+  },
+  92: {
+    name: "Recoleta",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Recoleta weapon skin quote.",
+    image: "Recoleta/Recoleta_Garment1.png",
+    tabimage: "Recoleta/Recoleta_Garment1.png"
+  },
+  93: {
+    name: "Reed",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Reed weapon skin quote.",
+    image: "Reed/Reed_Garment1.png",
+    tabimage: "Reed/Reed_Garment1.png"
+  },
+  94: {
+    name: "Regulus",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Support" }],
+    quote: "Regulus weapon skin quote.",
+    image: "Regulus/Regulus_Garment1.png",
+    tabimage: "Regulus/Regulus_Garment1.png"
+  },
+  95: {
+    name: "Rhiannon",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Rhiannon weapon skin quote.",
+    image: "Rhiannon/Rhiannon_Garment1.png",
+    tabimage: "Rhiannon/Rhiannon_Garment1.png"
+  },
+  96: {
+    name: "Rubuska",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Rubuska weapon skin quote.",
+    image: "Rubuska/Rubuska_Garment1.png",
+    tabimage: "Rubuska/Rubuska_Garment1.png"
+  },
+  97: {
+    name: "Satsuki",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Satsuki weapon skin quote.",
+    image: "Satsuki/Satsuki_Garment1.png",
+    tabimage: "Satsuki/Satsuki_Garment1.png"
+  },
+  98: {
+    name: "Semmelweis",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Semmelweis weapon skin quote.",
+    image: "Semmelweis/Semmelweis_Garment1.png",
+    tabimage: "Semmelweis/Semmelweis_Garment1.png"
+  },
+  99: {
+    name: "Sentinel",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Sentinel weapon skin quote.",
+    image: "Sentinel/Sentinel_Garment1.png",
+    tabimage: "Sentinel/Sentinel_Garment1.png"
+  },
+  100: {
+    name: "Shamane",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Shamane weapon skin quote.",
+    image: "Shamane/Shamane_Garment1.png",
+    tabimage: "Shamane/Shamane_Garment1.png"
+  },
+  101: {
+    name: "Silverwing Eagle",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Silverwing Eagle weapon skin quote.",
+    image: "Silverwing_Eagle/Silverwing_Eagle_Garment1.png",
+    tabimage: "Silverwing_Eagle/Silverwing_Eagle_Garment1.png"
+  },
+  102: {
+    name: "Sonetto",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Healer" }],
+    quote: "Sonetto weapon skin quote.",
+    image: "Sonetto/Sonetto_Garment1.png",
+    tabimage: "Sonetto/Sonetto_Garment1.png"
+  },
+  103: {
+    name: "Sotheby",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Sotheby weapon skin quote.",
+    image: "Sotheby/Sotheby_Garment1.png",
+    tabimage: "Sotheby/Sotheby_Garment1.png"
+  },
+  104: {
+    name: "Spathodea",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Support" }],
+    quote: "Spathodea weapon skin quote.",
+    image: "Spathodea/Spathodea_Garment1.png",
+    tabimage: "Spathodea/Spathodea_Garment1.png"
+  },
+  105: {
+    name: "Sputnik",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Healer" }],
+    quote: "Sputnik weapon skin quote.",
+    image: "Sputnik/Sputnik_Garment1.png",
+    tabimage: "Sputnik/Sputnik_Garment1.png"
+  },
+  106: {
+    name: "Sweetheart",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "Sweetheart weapon skin quote.",
+    image: "Sweetheart/Sweetheart_Garment1.png",
+    tabimage: "Sweetheart/Sweetheart_Garment1.png"
+  },
+  107: {
+    name: "Tennant",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "Tank" }],
+    quote: "Tennant weapon skin quote.",
+    image: "Tennant/Tennant_Garment1.png",
+    tabimage: "Tennant/Tennant_Garment1.png"
+  },
+  108: {
+    name: "The Fool",
+    badges: [{ icon: "asset/Star_Icon.png", text: "Tank" }],
+    quote: "The Fool weapon skin quote.",
+    image: "The_Fool/The_Fool_Garment1.png",
+    tabimage: "The_Fool/The_Fool_Garment1.png"
+  },
+  109: {
+    name: "The Twins",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "DPS" }],
+    quote: "The Twins weapon skin quote.",
+    image: "The_Twins/The_Twins_Garment1.png",
+    tabimage: "The_Twins/The_Twins_Garment1.png"
+  },
+  110: {
+    name: "Tooth Fairy",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Support" }],
+    quote: "Tooth Fairy weapon skin quote.",
+    image: "Tooth_Fairy/Tooth_Fairy_Garment1.png",
+    tabimage: "Tooth_Fairy/Tooth_Fairy_Garment1.png"
+  },
+  111: {
+    name: "TTT",
+    badges: [{ icon: "asset/Plant_Icon.png", text: "Tank" }],
+    quote: "TTT weapon skin quote.",
+    image: "TTT/TTT_Garment1.png",
+    tabimage: "TTT/TTT_Garment1.png"
+  },
+  112: {
+    name: "Tuesday",
+    badges: [{ icon: "asset/Star_Icon.png", text: "DPS" }],
+    quote: "Tuesday weapon skin quote.",
+    image: "Tuesday/Tuesday_Garment1.png",
+    tabimage: "Tuesday/Tuesday_Garment1.png"
+  },
+  113: {
+    name: "Twins Sleep",
+    badges: [{ icon: "asset/Beast_Icon.png", text: "DPS" }],
+    quote: "Twins Sleep weapon skin quote.",
+    image: "Twins_Sleep/Twins_Sleep_Garment1.png",
+    tabimage: "Twins_Sleep/Twins_Sleep_Garment1.png"
+  },
+};
+
+/* =========================================================
+   SKILL DATA
+   ---------------------------------------------------------
+   Semua preview sekarang pakai VIDEO (.mp4), bukan GIF lagi.
+   type selalu "video", src berakhiran .mp4.
+   ========================================================= */
+
+const skillData = {
+  1: {
+    origin: {
+      "ultimate": { icon: "vila/vila-ulti.png", preview: { type: "video", src: "vila/Vila_Skill3_Animation.mp4" }, name: "Nature's Wrath", desc: "Summon primal forces to devastate all enemies in sight." },
+      "skill-2": { icon: "vila/vila-skill2.png", preview: { type: "video", src: "vila/Vila_Skill2_Animation.mp4" }, name: "Beast's Embrace", desc: "Command beasts to protect and strengthen allies." },
+      "skill-1": { icon: "vila/vila-skill1.png", preview: { type: "video", src: "vila/Vila_Skill1_Animation.mp4" }, name: "Thorn Strike", desc: "Swift attack with natural thorns." }
+    },
+    character: {
+      "ultimate": { icon: "vila/vila-ulti.png", preview: { type: "video", src: "vila/Vila_Garment2_Skill3_Animation.mp4" }, name: "Nature's Wrath", desc: "Summon primal forces to devastate all enemies in sight." },
+      "skill-2": { icon: "vila/vila-skill2.png", preview: { type: "video", src: "vila/Vila_Garment2_Skill2_Animation.mp4" }, name: "Beast's Embrace", desc: "Command beasts to protect and strengthen allies." },
+      "skill-1": { icon: "vila/vila-skill1.png", preview: { type: "video", src: "vila/Vila_Garment2_Skill1_Animation.mp4" }, name: "Thorn Strike", desc: "Swift attack with natural thorns." }
+    },
+    weapon: {
+      "ultimate": { icon: "vila/vila-ulti.png", preview: { type: "video", src: "vila/Vila_Garment3_Skill3_Animation.mp4" }, name: "Nature's Wrath", desc: "Summon primal forces to devastate all enemies in sight." },
+      "skill-2": { icon: "vila/vila-skill2.png", preview: { type: "video", src: "vila/Vila_Garment3_Skill2_Animation.mp4" }, name: "Beast's Embrace", desc: "Command beasts to protect and strengthen allies." },
+      "skill-1": { icon: "vila/vila-skill1.png", preview: { type: "video", src: "vila/Vila_Garment3_Skill1_Animation.mp4" }, name: "Thorn Strike", desc: "Swift attack with natural thorns." }
+    }
+  },
+  2: {
+    origin: {
+      "ultimate": { icon: "vila/vila-ulti.png", preview: { type: "video", src: "vila/Vila_Skill3_Animation.mp4" }, name: "Primal Surge", desc: "Unleash elemental energy in a devastating wave." },
+      "skill-2": { icon: "vila/vila-skill2.png", preview: { type: "video", src: "vila/Vila_Skill2_Animation.mp4" }, name: "Elemental Shield", desc: "Create protective barriers using elemental energy." },
+      "skill-1": { icon: "vila/vila-skill1.png", preview: { type: "video", src: "vila/Vila_Skill1_Animation.mp4" }, name: "Energy Blast", desc: "Project focused energy at the target." }
+    },
+    character: {
+      "ultimate": { icon: "vila/vila-ulti.png", preview: { type: "video", src: "vila/Vila_Garment2_Skill3_Animation.mp4" }, name: "Primal Surge", desc: "Unleash elemental energy in a devastating wave." },
+      "skill-2": { icon: "vila/vila-skill2.png", preview: { type: "video", src: "vila/Vila_Garment2_Skill2_Animation.mp4" }, name: "Elemental Shield", desc: "Create protective barriers using elemental energy." },
+      "skill-1": { icon: "vila/vila-skill1.png", preview: { type: "video", src: "vila/Vila_Garment2_Skill1_Animation.mp4" }, name: "Energy Blast", desc: "Project focused energy at the target." }
+    },
+    weapon: {
+      "ultimate": { icon: "vila/vila-ulti.png", preview: { type: "video", src: "vila/Vila_Garment3_Skill3_Animation.mp4" }, name: "Primal Surge", desc: "Unleash elemental energy in a devastating wave." },
+      "skill-2": { icon: "vila/vila-skill2.png", preview: { type: "video", src: "vila/Vila_Garment3_Skill2_Animation.mp4" }, name: "Elemental Shield", desc: "Create protective barriers using elemental energy." },
+      "skill-1": { icon: "vila/vila-skill1.png", preview: { type: "video", src: "vila/Vila_Garment3_Skill1_Animation.mp4" }, name: "Energy Blast", desc: "Project focused energy at the target." }
+    }
+  }
+};
+
+const categories = { origin: originData, character: characterData, weapon: weaponData };
+const defaultCategory = "origin";
+const defaultSkill = "ultimate";
+
+let activeCategory = defaultCategory;
+let activeSkill = defaultSkill;
+let currentCharId = "1";
+
+const avatarItems = document.querySelectorAll(".avatar-item");
+const tabButtons = document.querySelectorAll(".tab-btn");
+const skillButtons = document.querySelectorAll(".skill-btn");
+
+const charName = document.getElementById("charName");
+const charBadges = document.getElementById("charBadges");
+const charQuote = document.getElementById("charQuote");
+const charImage = document.getElementById("charImage");
+const charStars = document.getElementById("charStars");
+
+const skillGif = document.getElementById("skillGif");
+const skillVideo = document.getElementById("skillVideo");
+const skillPreviewEmpty = document.getElementById("skillPreviewEmpty");
+
+const getCurrentSkillSet = () => skillData[currentCharId]?.[activeCategory];
+const getCurrentSkill = () => getCurrentSkillSet()?.[activeSkill];
+
+function replayFade(elements) {
+  elements.forEach((el) => {
+    if (!el) return;
+    el.classList.remove("fade-in");
+    void el.offsetWidth;
+    el.classList.add("fade-in");
+  });
+}
+
+const elementGradients = {
+  "Plant": "linear-gradient(135deg, #1b2e1f 0%, #2a4a30 100%)",
+  "Star": "linear-gradient(135deg, #2b2b3a 0%, #4a4a6b 100%)",
+  "Beast": "linear-gradient(135deg, #3a2b1b 0%, #6b4a2a 100%)"
+};
+
+const elementColors = {
+  "Plant": 'Plant',
+  "Star": 'Star', 
+  "Beast": 'Beast'
+};
+
+// Character glow effects mapping
+const characterGlows = {
+  "37": "rgba(255, 255, 255, 0.3)",
+  "6": "rgba(255, 255, 255, 0.3)",
+  "Aleph": "rgba(255, 255, 255, 0.3)",
+  "Alexios": "rgba(255, 255, 255, 0.3)",
+  "AliEn T": "rgba(255, 255, 255, 0.3)",
+  "An an Lee": "rgba(255, 255, 255, 0.3)",
+  "Anjo Nala": "rgba(255, 255, 255, 0.3)",
+  "APPLe": "rgba(255, 255, 255, 0.3)",
+  "Argus": "rgba(255, 255, 255, 0.3)",
+  "Avgust": "rgba(255, 255, 255, 0.3)",
+  "A Knight": "rgba(255, 255, 255, 0.3)",
+  "Baby Blue": "rgba(255, 255, 255, 0.3)",
+  "Balloon Party": "rgba(255, 255, 255, 0.3)",
+  "Barbara": "rgba(255, 255, 255, 0.3)",
+  "Barcarola": "rgba(255, 255, 255, 0.3)",
+  "Beryl": "rgba(255, 255, 255, 0.3)",
+  "Bkornblume": "rgba(255, 255, 255, 0.3)",
+  "Blonney": "rgba(255, 255, 255, 0.3)",
+  "Brimley": "rgba(255, 255, 255, 0.3)",
+  "Brume": "rgba(255, 255, 255, 0.3)",
+  "Buddy Fairchild": "rgba(255, 255, 255, 0.3)",
+  "Centurion": "rgba(255, 255, 255, 0.3)",
+  "Charlie": "rgba(255, 255, 255, 0.3)",
+  "Charon": "rgba(255, 255, 255, 0.3)",
+  "Cheng Heguang": "rgba(255, 255, 255, 0.3)",
+  "Click": "rgba(255, 255, 255, 0.3)",
+  "Coppélia": "rgba(255, 255, 255, 0.3)",
+  "Cornerstone": "rgba(255, 255, 255, 0.3)",
+  "Corvus": "rgba(255, 255, 255, 0.3)",
+  "Cristallo": "rgba(255, 255, 255, 0.3)",
+  "Darley Clatter": "rgba(255, 255, 255, 0.3)",
+  "Desert Flannel": "rgba(255, 255, 255, 0.3)",
+  "Diggers": "rgba(255, 255, 255, 0.3)",
+  "Dikke": "rgba(255, 255, 255, 0.3)",
+  "Door": "rgba(255, 255, 255, 0.3)",
+  "Druvis III": "rgba(255, 255, 255, 0.3)",
+  "Eagle": "rgba(255, 255, 255, 0.3)",
+  "Enigma": "rgba(255, 255, 255, 0.3)",
+  "Erick": "rgba(255, 255, 255, 0.3)",
+  "Eternity": "rgba(255, 255, 255, 0.3)",
+  "Everecho": "rgba(255, 255, 255, 0.3)",
+  "Ezio Auditore": "rgba(255, 255, 255, 0.3)",
+  "Ezra": "rgba(255, 255, 255, 0.3)",
+  "Fatutu": "rgba(255, 255, 255, 0.3)",
+  "Flutterpage": "rgba(255, 255, 255, 0.3)",
+  "Getian": "rgba(255, 255, 255, 0.3)",
+  "Hissabeth": "rgba(255, 255, 255, 0.3)",
+  "Horropedia": "rgba(255, 255, 255, 0.3)",
+  "Igor": "rgba(255, 255, 255, 0.3)",
+  "Isabella": "rgba(255, 255, 255, 0.3)",
+  "Isolde": "rgba(255, 255, 255, 0.3)",
+  "J": "rgba(255, 255, 255, 0.3)",
+  "Jessica": "rgba(255, 255, 255, 0.3)",
+  "Jiu Niangzi": "rgba(255, 255, 255, 0.3)",
+  "John Titor": "rgba(255, 255, 255, 0.3)",
+  "Kaalaa Baunaa": "rgba(255, 255, 255, 0.3)",
+  "Kakania": "rgba(255, 255, 255, 0.3)",
+  "Kanjira": "rgba(255, 255, 255, 0.3)",
+  "Kassandra": "rgba(255, 255, 255, 0.3)",
+  "Leilani": "rgba(255, 255, 255, 0.3)",
+  "Liang Yue": "rgba(255, 255, 255, 0.3)",
+  "Lilya": "rgba(255, 255, 255, 0.3)",
+  "Loggerhead": "rgba(255, 255, 255, 0.3)",
+  "Lopera": "rgba(255, 255, 255, 0.3)",
+  "Lorelei": "rgba(255, 255, 255, 0.3)",
+  "Lorentz Butterfly": "rgba(255, 255, 255, 0.3)",
+  "Lucy": "rgba(255, 255, 255, 0.3)",
+  "Marcus": "rgba(255, 255, 255, 0.3)",
+  "Marsha": "rgba(255, 255, 255, 0.3)",
+  "Matilda": "rgba(255, 255, 255, 0.3)",
+  "Melania": "rgba(255, 255, 255, 0.3)",
+  "Mercuria": "rgba(255, 255, 255, 0.3)",
+  "Mesmer Jr": "rgba(255, 255, 255, 0.3)",
+  "Moldir": "rgba(255, 255, 255, 0.3)",
+  "Mondlicht": "rgba(255, 255, 255, 0.3)",
+  "mp": "rgba(255, 255, 255, 0.3)",
+  "Ms. NewBabel": "rgba(255, 255, 255, 0.3)",
+  "Ms. Stranger": "rgba(255, 255, 255, 0.3)",
+  "Name Day": "rgba(255, 255, 255, 0.3)",
+  "Nautika": "rgba(255, 255, 255, 0.3)",
+  "Necrologist": "rgba(255, 255, 255, 0.3)",
+  "Nick Bottom": "rgba(255, 255, 255, 0.3)",
+  "Noire": "rgba(255, 255, 255, 0.3)",
+  "NORA": "rgba(255, 255, 255, 0.3)",
+  "Oliver Fog": "rgba(255, 255, 255, 0.3)",
+  "ONiON": "rgba(255, 255, 255, 0.3)",
+  "Paper Heron": "rgba(255, 255, 255, 0.3)",
+  "Pavia": "rgba(255, 255, 255, 0.3)",
+  "Pickles": "rgba(255, 255, 255, 0.3)",
+  "Pioneer": "rgba(255, 255, 255, 0.3)",
+  "Ramona": "rgba(255, 255, 255, 0.3)",
+  "Recoleta": "rgba(255, 255, 255, 0.3)",
+  "Reed": "rgba(255, 255, 255, 0.3)",
+  "Regulus": "rgba(255, 255, 255, 0.3)",
+  "Rhiannon": "rgba(255, 255, 255, 0.3)",
+  "Rubuska": "rgba(255, 255, 255, 0.3)",
+  "Satsuki": "rgba(255, 255, 255, 0.3)",
+  "Semmelweis": "rgba(255, 255, 255, 0.3)",
+  "Sentinel": "rgba(255, 255, 255, 0.3)",
+  "Shamane": "rgba(255, 255, 255, 0.3)",
+  "Silverwing Eagle": "rgba(255, 255, 255, 0.3)",
+  "Sonetto": "rgba(255, 255, 255, 0.3)",
+  "Sotheby": "rgba(255, 255, 255, 0.3)",
+  "Spathodea": "rgba(255, 255, 255, 0.3)",
+  "Sputnik": "rgba(255, 255, 255, 0.3)",
+  "Sweetheart": "rgba(255, 255, 255, 0.3)",
+  "Tennant": "rgba(255, 255, 255, 0.3)",
+  "The Fool": "rgba(255, 255, 255, 0.3)",
+  "The Twins": "rgba(255, 255, 255, 0.3)",
+  "Tooth Fairy": "rgba(255, 255, 255, 0.3)",
+  "TTT": "rgba(255, 255, 255, 0.3)",
+  "Tuesday": "rgba(255, 255, 255, 0.3)",
+  "Twins Sleep": "rgba(255, 255, 255, 0.3)",
+};
+
+// Weapon names mapping
+const weaponNames = {
+  "37": "Standard Weapon",
+  "6": "Standard Weapon",
+  "Aleph": "Standard Weapon",
+  "Alexios": "Standard Weapon",
+  "AliEn T": "Standard Weapon",
+  "An an Lee": "Standard Weapon",
+  "Anjo Nala": "Standard Weapon",
+  "APPLe": "Standard Weapon",
+  "Argus": "Standard Weapon",
+  "Avgust": "Standard Weapon",
+  "A Knight": "Standard Weapon",
+  "Baby Blue": "Standard Weapon",
+  "Balloon Party": "Standard Weapon",
+  "Barbara": "Standard Weapon",
+  "Barcarola": "Standard Weapon",
+  "Beryl": "Standard Weapon",
+  "Bkornblume": "Standard Weapon",
+  "Blonney": "Standard Weapon",
+  "Brimley": "Standard Weapon",
+  "Brume": "Standard Weapon",
+  "Buddy Fairchild": "Standard Weapon",
+  "Centurion": "Standard Weapon",
+  "Charlie": "Standard Weapon",
+  "Charon": "Standard Weapon",
+  "Cheng Heguang": "Standard Weapon",
+  "Click": "Standard Weapon",
+  "Coppélia": "Standard Weapon",
+  "Cornerstone": "Standard Weapon",
+  "Corvus": "Standard Weapon",
+  "Cristallo": "Standard Weapon",
+  "Darley Clatter": "Standard Weapon",
+  "Desert Flannel": "Standard Weapon",
+  "Diggers": "Standard Weapon",
+  "Dikke": "Standard Weapon",
+  "Door": "Standard Weapon",
+  "Druvis III": "Standard Weapon",
+  "Eagle": "Standard Weapon",
+  "Enigma": "Standard Weapon",
+  "Erick": "Standard Weapon",
+  "Eternity": "Standard Weapon",
+  "Everecho": "Standard Weapon",
+  "Ezio Auditore": "Standard Weapon",
+  "Ezra": "Standard Weapon",
+  "Fatutu": "Standard Weapon",
+  "Flutterpage": "Standard Weapon",
+  "Getian": "Standard Weapon",
+  "Hissabeth": "Standard Weapon",
+  "Horropedia": "Standard Weapon",
+  "Igor": "Standard Weapon",
+  "Isabella": "Standard Weapon",
+  "Isolde": "Standard Weapon",
+  "J": "Standard Weapon",
+  "Jessica": "Standard Weapon",
+  "Jiu Niangzi": "Standard Weapon",
+  "John Titor": "Standard Weapon",
+  "Kaalaa Baunaa": "Standard Weapon",
+  "Kakania": "Standard Weapon",
+  "Kanjira": "Standard Weapon",
+  "Kassandra": "Standard Weapon",
+  "Leilani": "Standard Weapon",
+  "Liang Yue": "Standard Weapon",
+  "Lilya": "Standard Weapon",
+  "Loggerhead": "Standard Weapon",
+  "Lopera": "Standard Weapon",
+  "Lorelei": "Standard Weapon",
+  "Lorentz Butterfly": "Standard Weapon",
+  "Lucy": "Standard Weapon",
+  "Marcus": "Standard Weapon",
+  "Marsha": "Standard Weapon",
+  "Matilda": "Standard Weapon",
+  "Melania": "Standard Weapon",
+  "Mercuria": "Standard Weapon",
+  "Mesmer Jr": "Standard Weapon",
+  "Moldir": "Standard Weapon",
+  "Mondlicht": "Standard Weapon",
+  "mp": "Standard Weapon",
+  "Ms. NewBabel": "Standard Weapon",
+  "Ms. Stranger": "Standard Weapon",
+  "Name Day": "Standard Weapon",
+  "Nautika": "Standard Weapon",
+  "Necrologist": "Standard Weapon",
+  "Nick Bottom": "Standard Weapon",
+  "Noire": "Standard Weapon",
+  "NORA": "Standard Weapon",
+  "Oliver Fog": "Standard Weapon",
+  "ONiON": "Standard Weapon",
+  "Paper Heron": "Standard Weapon",
+  "Pavia": "Standard Weapon",
+  "Pickles": "Standard Weapon",
+  "Pioneer": "Standard Weapon",
+  "Ramona": "Standard Weapon",
+  "Recoleta": "Standard Weapon",
+  "Reed": "Standard Weapon",
+  "Regulus": "Standard Weapon",
+  "Rhiannon": "Standard Weapon",
+  "Rubuska": "Standard Weapon",
+  "Satsuki": "Standard Weapon",
+  "Semmelweis": "Standard Weapon",
+  "Sentinel": "Standard Weapon",
+  "Shamane": "Standard Weapon",
+  "Silverwing Eagle": "Standard Weapon",
+  "Sonetto": "Standard Weapon",
+  "Sotheby": "Standard Weapon",
+  "Spathodea": "Standard Weapon",
+  "Sputnik": "Standard Weapon",
+  "Sweetheart": "Standard Weapon",
+  "Tennant": "Standard Weapon",
+  "The Fool": "Standard Weapon",
+  "The Twins": "Standard Weapon",
+  "Tooth Fairy": "Standard Weapon",
+  "TTT": "Standard Weapon",
+  "Tuesday": "Standard Weapon",
+  "Twins Sleep": "Standard Weapon",
+};
+
+// Character stats mapping
+const characterStats = {
+  "37": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "6": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Aleph": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Alexios": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "AliEn T": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "An an Lee": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Anjo Nala": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "APPLe": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Argus": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Avgust": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "A Knight": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Baby Blue": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Balloon Party": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Barbara": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Barcarola": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Beryl": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Bkornblume": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Blonney": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Brimley": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Brume": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Buddy Fairchild": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Centurion": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Charlie": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Charon": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Cheng Heguang": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Click": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Coppélia": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Cornerstone": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Corvus": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Cristallo": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Darley Clatter": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Desert Flannel": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Diggers": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Dikke": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Door": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Druvis III": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Eagle": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Enigma": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Erick": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Eternity": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Everecho": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Ezio Auditore": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Ezra": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Fatutu": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Flutterpage": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Getian": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Hissabeth": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Horropedia": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Igor": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Isabella": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Isolde": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "J": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Jessica": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Jiu Niangzi": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "John Titor": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Kaalaa Baunaa": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Kakania": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Kanjira": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Kassandra": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Leilani": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Liang Yue": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Lilya": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Loggerhead": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Lopera": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Lorelei": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Lorentz Butterfly": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Lucy": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Marcus": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Marsha": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Matilda": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Melania": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Mercuria": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Mesmer Jr": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Moldir": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Mondlicht": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "mp": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Ms. NewBabel": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Ms. Stranger": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Name Day": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Nautika": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Necrologist": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Nick Bottom": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Noire": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "NORA": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Oliver Fog": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "ONiON": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Paper Heron": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Pavia": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Pickles": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Pioneer": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Ramona": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Recoleta": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Reed": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Regulus": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Rhiannon": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Rubuska": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Satsuki": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Semmelweis": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Sentinel": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Shamane": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Silverwing Eagle": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Sonetto": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Sotheby": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Spathodea": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Sputnik": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Sweetheart": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Tennant": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "The Fool": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "The Twins": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Tooth Fairy": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "TTT": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Tuesday": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+  "Twins Sleep": { hp: { value: 900, max: 1100, percent: 80 }, atk: { value: 90, max: 110, percent: 80 }, def: { value: 70, max: 90, percent: 75 }, crit: { value: 10, max: 100, percent: 10 }, energy: { value: 75, max: 100, percent: 75 } },
+};
+
+// Character roles mapping
+const characterRoles = {
+  "37": "Support",
+  "6": "DPS",
+  "Aleph": "Tank",
+  "Alexios": "DPS",
+  "AliEn T": "Healer",
+  "An an Lee": "Healer",
+  "Anjo Nala": "Healer",
+  "APPLe": "DPS",
+  "Argus": "Support",
+  "Avgust": "Tank",
+  "A Knight": "Support",
+  "Baby Blue": "DPS",
+  "Balloon Party": "Healer",
+  "Barbara": "DPS",
+  "Barcarola": "Healer",
+  "Beryl": "Support",
+  "Bkornblume": "Tank",
+  "Blonney": "Healer",
+  "Brimley": "Healer",
+  "Brume": "DPS",
+  "Buddy Fairchild": "DPS",
+  "Centurion": "DPS",
+  "Charlie": "Healer",
+  "Charon": "Tank",
+  "Cheng Heguang": "Tank",
+  "Click": "DPS",
+  "Coppélia": "Tank",
+  "Cornerstone": "Support",
+  "Corvus": "Healer",
+  "Cristallo": "DPS",
+  "Darley Clatter": "Healer",
+  "Desert Flannel": "Tank",
+  "Diggers": "DPS",
+  "Dikke": "Support",
+  "Door": "Healer",
+  "Druvis III": "Support",
+  "Eagle": "Healer",
+  "Enigma": "DPS",
+  "Erick": "DPS",
+  "Eternity": "Tank",
+  "Everecho": "DPS",
+  "Ezio Auditore": "Support",
+  "Ezra": "DPS",
+  "Fatutu": "Support",
+  "Flutterpage": "Tank",
+  "Getian": "Healer",
+  "Hissabeth": "Healer",
+  "Horropedia": "Healer",
+  "Igor": "Support",
+  "Isabella": "Healer",
+  "Isolde": "Support",
+  "J": "Tank",
+  "Jessica": "DPS",
+  "Jiu Niangzi": "Healer",
+  "John Titor": "Healer",
+  "Kaalaa Baunaa": "DPS",
+  "Kakania": "Healer",
+  "Kanjira": "DPS",
+  "Kassandra": "Support",
+  "Leilani": "DPS",
+  "Liang Yue": "DPS",
+  "Lilya": "Tank",
+  "Loggerhead": "Support",
+  "Lopera": "Healer",
+  "Lorelei": "Healer",
+  "Lorentz Butterfly": "Support",
+  "Lucy": "Tank",
+  "Marcus": "DPS",
+  "Marsha": "Support",
+  "Matilda": "DPS",
+  "Melania": "Healer",
+  "Mercuria": "Support",
+  "Mesmer Jr": "Support",
+  "Moldir": "Tank",
+  "Mondlicht": "DPS",
+  "mp": "Support",
+  "Ms. NewBabel": "DPS",
+  "Ms. Stranger": "DPS",
+  "Name Day": "DPS",
+  "Nautika": "Support",
+  "Necrologist": "Tank",
+  "Nick Bottom": "Tank",
+  "Noire": "Healer",
+  "NORA": "Support",
+  "Oliver Fog": "Support",
+  "ONiON": "Support",
+  "Paper Heron": "Healer",
+  "Pavia": "Tank",
+  "Pickles": "Support",
+  "Pioneer": "Support",
+  "Ramona": "DPS",
+  "Recoleta": "Healer",
+  "Reed": "Healer",
+  "Regulus": "DPS",
+  "Rhiannon": "DPS",
+  "Rubuska": "Support",
+  "Satsuki": "Healer",
+  "Semmelweis": "Support",
+  "Sentinel": "Healer",
+  "Shamane": "Support",
+  "Silverwing Eagle": "Tank",
+  "Sonetto": "DPS",
+  "Sotheby": "Tank",
+  "Spathodea": "Tank",
+  "Sputnik": "Tank",
+  "Sweetheart": "Tank",
+  "Tennant": "DPS",
+  "The Fool": "Tank",
+  "The Twins": "Healer",
+  "Tooth Fairy": "DPS",
+  "TTT": "Tank",
+  "Tuesday": "Support",
+  "Twins Sleep": "DPS",
+};
+
+// Character element mapping
+const characterElement = {
+  "37": "Plant",
+  "6": "Beast",
+  "Aleph": "Beast",
+  "Alexios": "Beast",
+  "AliEn T": "Plant",
+  "An an Lee": "Plant",
+  "Anjo Nala": "Beast",
+  "APPLe": "Plant",
+  "Argus": "Star",
+  "Avgust": "Star",
+  "A Knight": "Plant",
+  "Baby Blue": "Beast",
+  "Balloon Party": "Beast",
+  "Barbara": "Plant",
+  "Barcarola": "Beast",
+  "Beryl": "Star",
+  "Bkornblume": "Beast",
+  "Blonney": "Plant",
+  "Brimley": "Star",
+  "Brume": "Star",
+  "Buddy Fairchild": "Plant",
+  "Centurion": "Beast",
+  "Charlie": "Star",
+  "Charon": "Plant",
+  "Cheng Heguang": "Star",
+  "Click": "Beast",
+  "Coppélia": "Star",
+  "Cornerstone": "Star",
+  "Corvus": "Plant",
+  "Cristallo": "Star",
+  "Darley Clatter": "Plant",
+  "Desert Flannel": "Beast",
+  "Diggers": "Star",
+  "Dikke": "Beast",
+  "Door": "Plant",
+  "Druvis III": "Star",
+  "Eagle": "Plant",
+  "Enigma": "Beast",
+  "Erick": "Beast",
+  "Eternity": "Star",
+  "Everecho": "Beast",
+  "Ezio Auditore": "Plant",
+  "Ezra": "Star",
+  "Fatutu": "Star",
+  "Flutterpage": "Plant",
+  "Getian": "Plant",
+  "Hissabeth": "Beast",
+  "Horropedia": "Beast",
+  "Igor": "Beast",
+  "Isabella": "Plant",
+  "Isolde": "Plant",
+  "J": "Plant",
+  "Jessica": "Beast",
+  "Jiu Niangzi": "Star",
+  "John Titor": "Star",
+  "Kaalaa Baunaa": "Beast",
+  "Kakania": "Star",
+  "Kanjira": "Star",
+  "Kassandra": "Plant",
+  "Leilani": "Beast",
+  "Liang Yue": "Beast",
+  "Lilya": "Plant",
+  "Loggerhead": "Star",
+  "Lopera": "Beast",
+  "Lorelei": "Star",
+  "Lorentz Butterfly": "Beast",
+  "Lucy": "Plant",
+  "Marcus": "Plant",
+  "Marsha": "Star",
+  "Matilda": "Beast",
+  "Melania": "Plant",
+  "Mercuria": "Beast",
+  "Mesmer Jr": "Plant",
+  "Moldir": "Beast",
+  "Mondlicht": "Plant",
+  "mp": "Beast",
+  "Ms. NewBabel": "Beast",
+  "Ms. Stranger": "Beast",
+  "Name Day": "Beast",
+  "Nautika": "Plant",
+  "Necrologist": "Star",
+  "Nick Bottom": "Beast",
+  "Noire": "Beast",
+  "NORA": "Beast",
+  "Oliver Fog": "Star",
+  "ONiON": "Plant",
+  "Paper Heron": "Star",
+  "Pavia": "Plant",
+  "Pickles": "Plant",
+  "Pioneer": "Plant",
+  "Ramona": "Beast",
+  "Recoleta": "Plant",
+  "Reed": "Plant",
+  "Regulus": "Star",
+  "Rhiannon": "Plant",
+  "Rubuska": "Beast",
+  "Satsuki": "Plant",
+  "Semmelweis": "Star",
+  "Sentinel": "Star",
+  "Shamane": "Star",
+  "Silverwing Eagle": "Star",
+  "Sonetto": "Beast",
+  "Sotheby": "Beast",
+  "Spathodea": "Beast",
+  "Sputnik": "Plant",
+  "Sweetheart": "Beast",
+  "Tennant": "Plant",
+  "The Fool": "Plant",
+  "The Twins": "Star",
+  "Tooth Fairy": "Plant",
+  "TTT": "Beast",
+  "Tuesday": "Beast",
+  "Twins Sleep": "Plant",
+};
+
+function updateBackground(data) {
+  const badgeIcon = data.badges[0]?.icon;
+  let element = "Star";
+  if (badgeIcon?.includes("Plant")) element = "Plant";
+  if (badgeIcon?.includes("Star")) element = "Star";
+  if (badgeIcon?.includes("Beast")) element = "Beast";
+  
+  document.querySelector('.hero').style.setProperty('--bg-gradient', elementGradients[element] || elementGradients["Star"]);
+  
+  if (window.particleSystem && elementColors[element]) {
+    particleSystem.updateElement(elementColors[element]);
+  }
+}
+
+function renderData(data) {
+  if (!data) return;
+
+  charName.textContent = data.name;
+  charQuote.innerHTML = data.quote;
+  charImage.src = data.image;
+  
+  document.getElementById('roleName').textContent = characterRoles[data.name] || "Arcanist";
+  document.getElementById('elementName').textContent = characterElement[data.name] || "Unknown";
+  document.getElementById('weaponName').textContent = weaponNames[data.name] || "Standard Psychube";
+
+  // Apply character-specific glow
+  const glow = characterGlows[data.name] || "rgba(255,255,255,0.3)";
+  charImage.style.filter = `drop-shadow(0 0 30px ${glow}) drop-shadow(0 0 60px ${glow.replace('0.3', '0.15')}) drop-shadow(0 0 100px ${glow.replace('0.3', '0.08')})`;
+
+  charBadges.innerHTML = "";
+  data.badges.forEach((badge) => {
+    const wrapper = document.createElement("span");
+    wrapper.className = "badge";
+    const icon = document.createElement("img");
+    icon.src = badge.icon;
+    icon.alt = badge.text;
+    const label = document.createElement("span");
+    label.textContent = badge.text;
+    wrapper.appendChild(icon);
+    wrapper.appendChild(label);
+    charBadges.appendChild(wrapper);
+  });
+
+  // Update character stats
+  updateStats(data.name);
+
+  updateBackground(data);
+  replayFade([charImage, charName, charStars, charQuote, charBadges, document.getElementById('weaponDisplay'), document.getElementById('roleName'), document.getElementById('elementName')]);
+}
+
+function updateStats(characterName) {
+  const stats = characterStats[characterName];
+  if (!stats) return;
+
+  // Animate values with count-up effect
+  animateStat('stat-hp', stats.hp.value, stats.hp.max);
+  animateStat('stat-atk', stats.atk.value, stats.atk.max);
+  animateStat('stat-def', stats.def.value, stats.def.max);
+  
+  // Format crit & energy percentages
+  document.getElementById('stat-crit').textContent = `${stats.crit.value}%`;
+  document.getElementById('stat-energy').textContent = `${stats.energy.value}%`;
+
+  // Animate progress bars
+  setTimeout(() => {
+    document.getElementById('stat-fill-hp').style.width = `${stats.hp.percent}%`;
+    document.getElementById('stat-fill-atk').style.width = `${stats.atk.percent}%`;
+    document.getElementById('stat-fill-def').style.width = `${stats.def.percent}%`;
+    document.getElementById('stat-fill-crit').style.width = `${stats.crit.percent}%`;
+    document.getElementById('stat-fill-energy').style.width = `${stats.energy.percent}%`;
+  }, 200);
+}
+
+function animateStat(elementId, targetValue, maxValue) {
+  const element = document.getElementById(elementId);
+  if (!element) return;
+
+  const duration = 800;
+  const startTime = Date.now();
+  const startValue = parseInt(element.textContent) || 0;
+  const endValue = targetValue;
+
+  function update() {
+    const currentTime = Date.now();
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    
+    const easeValue = progress < 0.5 
+      ? 4 * progress * progress * progress 
+      : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+    const currentValue = Math.round(startValue + (endValue - startValue) * easeValue);
+    element.textContent = currentValue;
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+function updateTabImages(id) {
+  tabButtons.forEach((btn) => {
+    const category = btn.getAttribute("data-category");
+    const img = btn.querySelector("img");
+    const data = categories[category]?.[id];
+    if (data?.tabimage) img.src = data.tabimage;
+  });
+}
+
+function setActiveTab(category) {
+  activeCategory = category;
+  tabButtons.forEach((btn) => {
+    btn.classList.toggle("active", btn.getAttribute("data-category") === category);
+  });
+}
+
+function setActiveSkill(skillId) {
+  activeSkill = skillId;
+  skillButtons.forEach((btn) => {
+    btn.classList.toggle("active", btn.getAttribute("data-skill") === skillId);
+  });
+}
+
+function updateSkillTabs() {
+  const skillSet = getCurrentSkillSet();
+  skillButtons.forEach((btn) => {
+    const skillId = btn.getAttribute("data-skill");
+    const img = btn.querySelector("img");
+    const skill = skillSet?.[skillId];
+    if (skill?.icon) {
+      img.src = skill.icon;
+      img.hidden = false;
+    } else {
+      img.hidden = true;
+    }
+  });
+}
+
+function updateSkillPreview() {
+  const skill = getCurrentSkill();
+  const preview = skill?.preview;
+
+  skillVideo.pause();
+  skillVideo.removeAttribute("src");
+  skillVideo.load();
+  skillVideo.hidden = true;
+
+  if (skillGif) {
+    skillGif.removeAttribute("src");
+    skillGif.hidden = true;
+  }
+
+  skillPreviewEmpty.hidden = true;
+
+  if (!preview?.src) {
+    skillPreviewEmpty.hidden = false;
+    replayFade([skillPreviewEmpty]);
+    return;
+  }
+
+  skillVideo.src = preview.src;
+  skillVideo.hidden = false;
+  skillVideo.loop = true;
+  skillVideo.muted = true;
+  skillVideo.autoplay = true;
+  skillVideo.currentTime = 0;
+  skillVideo.play().catch(() => {
+  });
+  
+  document.getElementById('skillTitle').textContent = skill.name;
+  document.getElementById('skillDesc').textContent = skill.desc;
+  
+  replayFade([skillVideo]);
+}
+
+function renderSkills() {
+  updateSkillTabs();
+  updateSkillPreview();
+}
+
+avatarItems.forEach((avatar) => {
+  avatar.addEventListener("click", () => {
+    const id = avatar.getAttribute("data-id");
+    currentCharId = id;
+    activeCategory = defaultCategory;
+    activeSkill = defaultSkill;
+
+    renderData(categories[defaultCategory]?.[id]);
+    updateTabImages(id);
+    setActiveTab(defaultCategory);
+    setActiveSkill(defaultSkill);
+    renderSkills();
+
+    avatarItems.forEach((a) => a.classList.remove("active"));
+    avatar.classList.add("active");
+  });
+});
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const category = btn.getAttribute("data-category");
+    setActiveTab(category);
+    activeSkill = defaultSkill;
+    setActiveSkill(defaultSkill);
+    renderData(categories[category]?.[currentCharId]);
+    renderSkills();
+  });
+});
+
+skillButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const skillId = btn.getAttribute("data-skill");
+    setActiveSkill(skillId);
+    updateSkillPreview();
+  });
+});
+
+updateTabImages(currentCharId);
+renderData(categories[defaultCategory][currentCharId]);
+setActiveTab(defaultCategory);
+setActiveSkill(defaultSkill);
+renderSkills();
+
+const navItems = document.querySelectorAll(".nav-item");
+
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navItems.forEach((el) => el.classList.remove("active"));
+    item.classList.add("active");
+  });
+});
+
+class ParticleSystem {
+  constructor(canvas) {
+    this.canvas = canvas;
+    this.ctx = canvas.getContext('2d');
+    this.particles = [];
+    this.maxParticles = 80;
+    this.colors = {
+      Plant: ['#4ade80', '#22c55e', '#86efac'],
+      Star: ['#a78bfa', '#8b5cf6', '#c4b5fd'],
+      Beast: ['#fb923c', '#f97316', '#fdba74']
+    };
+    this.currentElement = 'Star';
+    this.resize();
+    this.init();
+    this.animate();
+    window.addEventListener('resize', () => this.resize());
+  }
+
+  resize() {
+    this.canvas.width = this.canvas.offsetWidth;
+    this.canvas.height = this.canvas.offsetHeight;
+  }
+
+  init() {
+    for (let i = 0; i < this.maxParticles; i++) {
+      this.particles.push(this.createParticle());
+    }
+  }
+
+  createParticle() {
+    const colors = this.colors[this.currentElement];
+    return {
+      x: Math.random() * this.canvas.width,
+      y: Math.random() * this.canvas.height,
+      vx: (Math.random() - 0.5) * 0.5,
+      vy: (Math.random() - 0.5) * 0.5,
+      radius: Math.random() * 2 + 1,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      opacity: Math.random() * 0.5 + 0.2
+    };
+  }
+
+  updateElement(element) {
+    this.currentElement = element;
+    this.particles.forEach(p => {
+      const colors = this.colors[element];
+      p.color = colors[Math.floor(Math.random() * colors.length)];
+    });
+  }
+
+  update() {
+    this.particles.forEach(p => {
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < 0 || p.x > this.canvas.width) p.vx *= -1;
+      if (p.y < 0 || p.y > this.canvas.height) p.vy *= -1;
+    });
+  }
+
+  draw() {
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    
+    this.particles.forEach(p => {
+      this.ctx.beginPath();
+      this.ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      this.ctx.fillStyle = p.color;
+      this.ctx.globalAlpha = p.opacity;
+      this.ctx.fill();
+      
+      const gradient = this.ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius * 3);
+      gradient.addColorStop(0, p.color);
+      gradient.addColorStop(1, 'transparent');
+      this.ctx.fillStyle = gradient;
+      this.ctx.globalAlpha = p.opacity * 0.3;
+      this.ctx.fillRect(p.x - p.radius * 3, p.y - p.radius * 3, p.radius * 6, p.radius * 6);
+    });
+    
+    this.ctx.globalAlpha = 1;
+  }
+
+  animate() {
+    this.update();
+    this.draw();
+    requestAnimationFrame(() => this.animate());
+  }
+}
+
+// 3D Tilt Effect on Hero Image
+const heroImageContainer = document.querySelector('.hero-image-container');
+const heroImage = document.getElementById('charImage');
+
+if (heroImageContainer && heroImage) {
+  heroImageContainer.addEventListener('mousemove', (e) => {
+    const rect = heroImageContainer.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    
+    const rotateX = ((y - centerY) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
+    
+    heroImage.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+    heroImage.style.transition = 'transform 0.05s linear';
+  });
+
+  heroImageContainer.addEventListener('mouseleave', () => {
+    heroImage.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+    heroImage.style.transition = 'transform 0.5s ease-out';
+  });
+}
+
+const skillModal = document.getElementById('skillModal');
+const modalVideo = document.getElementById('modalVideo');
+const modalTitle = document.getElementById('modalTitle');
+const modalDesc = document.getElementById('modalDesc');
+const modalClose = document.getElementById('modalClose');
+const skillPreviewContainer = document.getElementById('skillPreview');
+
+skillPreviewContainer.addEventListener('click', () => {
+  const skill = getCurrentSkill();
+  if (!skill?.preview?.src) return;
+  
+  modalVideo.src = skill.preview.src;
+  modalTitle.textContent = skill.name;
+  modalDesc.textContent = skill.desc;
+  skillModal.classList.add('active');
+  modalVideo.currentTime = 0;
+  modalVideo.play();
+});
+
+modalClose.addEventListener('click', () => {
+  skillModal.classList.remove('active');
+  modalVideo.pause();
+  modalVideo.src = '';
+});
+
+skillModal.addEventListener('click', (e) => {
+  if (e.target === skillModal) {
+    skillModal.classList.remove('active');
+    modalVideo.pause();
+    modalVideo.src = '';
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && skillModal.classList.contains('active')) {
+    skillModal.classList.remove('active');
+    modalVideo.pause();
+    modalVideo.src = '';
+  }
+});
+
+const avatarsContainer = document.querySelector('.hero-avatars');
+const prevBtn = document.querySelector('.carousel-nav.prev');
+const nextBtn = document.querySelector('.carousel-nav.next');
+
+if (avatarsContainer && prevBtn && nextBtn) {
+  const scrollAmount = 230; 
+
+  function updateButtonVisibility() {
+    const { scrollLeft, scrollWidth, clientWidth } = avatarsContainer;
+    
+    if (scrollLeft <= 5) {
+      prevBtn.disabled = true;
+    } else {
+      prevBtn.disabled = false;
+    }
+    
+    // Hide next button at end
+    if (scrollLeft + clientWidth >= scrollWidth - 5) {
+      nextBtn.disabled = true;
+    } else {
+      nextBtn.disabled = false;
+    }
+  }
+
+  // Initial check
+  updateButtonVisibility();
+
+  // Update on scroll
+  avatarsContainer.addEventListener('scroll', updateButtonVisibility);
+
+  prevBtn.addEventListener('click', () => {
+    avatarsContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    avatarsContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  // Enable Mouse Drag Scrolling
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  avatarsContainer.addEventListener('mousedown', (e) => {
+    isDown = true;
+    avatarsContainer.style.cursor = 'grabbing';
+    startX = e.pageX - avatarsContainer.offsetLeft;
+    scrollLeft = avatarsContainer.scrollLeft;
+  });
+
+  avatarsContainer.addEventListener('mouseleave', () => {
+    isDown = false;
+    avatarsContainer.style.cursor = 'default';
+  });
+
+  avatarsContainer.addEventListener('mouseup', () => {
+    isDown = false;
+    avatarsContainer.style.cursor = 'default';
+  });
+
+  avatarsContainer.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - avatarsContainer.offsetLeft;
+    const walk = (x - startX) * 2;
+    avatarsContainer.scrollLeft = scrollLeft - walk;
+  });
+}

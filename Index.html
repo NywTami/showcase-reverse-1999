@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcanist - Character Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="side-nav">
+    <button class="nav-item active" data-afflatus="All" title="All">
+      <div class="icon-wrapper"><span class="nav-icon-placeholder" aria-hidden="true">A</span></div>
+      <span class="nav-label">All</span>
+    </button>
+    <button class="nav-item" data-afflatus="Plant" title="Plant">
+      <div class="icon-wrapper"><img src="asset/Plant_Icon.png" alt="Plant"></div>
+      <span class="nav-label">Plant</span>
+    </button>
+    <button class="nav-item" data-afflatus="Star" title="Star">
+      <div class="icon-wrapper"><img src="asset/Star_Icon.png" alt="Star"></div>
+      <span class="nav-label">Star</span>
+    </button>
+    <button class="nav-item" data-afflatus="Beast" title="Beast">
+      <div class="icon-wrapper"><img src="asset/Beast_Icon.png" alt="Beast"></div>
+      <span class="nav-label">Beast</span>
+    </button>
+    <button class="nav-item" data-afflatus="Mineral" title="Mineral">
+      <div class="icon-wrapper"><img src="asset/Mineral_Icon.png" alt="Mineral"></div>
+      <span class="nav-label">Mineral</span>
+    </button>
+    <button class="nav-item" data-afflatus="Intellect" title="Intellect">
+      <div class="icon-wrapper"><img src="asset/Intellect_Icon.png" alt="Intellect"></div>
+      <span class="nav-label">Intellect</span>
+    </button>
+    <button class="nav-item" data-afflatus="Spirit" title="Spirit">
+      <div class="icon-wrapper"><img src="asset/Spirit_Icon.png" alt="Spirit"></div>
+      <span class="nav-label">Spirit</span>
+    </button>
+  </aside>
+
+  <!-- MAIN CONTAINER -->
+  <main class="hero">
+    <canvas id="particleCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"></canvas>
+
+    <!-- TOP HEADER -->
+    <header class="hero-header" style="position: relative; z-index: 10;">
+      <h1 class="logo-title">Arcanist</h1>
+      <button class="btn-home">HOME</button>
+    </header>
+
+    <!-- CENTER CONTENT GRID -->
+    <section class="hero-content" style="position: relative; z-index: 5;">
+
+      <!-- LEFT COLUMN: INFO, QUOTE & SKILL PREVIEW -->
+      <div class="column-left">
+        <div class="char-details">
+          <h2 class="char-name" id="charName">Vila</h2>
+          <div class="meta-row">
+            <div class="bpadges" id="charBadges"></div>
+            <div class="stars" id="charStars">
+              <img class="img-stars" src="asset/stars-6.png" alt="Rarity Stars">
+            </div>
+          </div>
+          <div class="role-display">
+            <span class="role-label">Role:</span>
+            <span class="role-name" id="roleName">Nature DPS / Beastmaster</span>
+          </div>
+          <div class="element-display">
+            <span class="element-label">Element:</span>
+            <span class="element-name" id="elementName">Plant (Nature)</span>
+          </div>
+          <div class="weapon-display" id="weaponDisplay">
+            <span class="weapon-label">Psychube:</span>
+            <span class="weapon-name" id="weaponName">Staff of Wilderness</span>
+          </div>
+          <p class="char-quote" id="charQuote"></p>
+
+          <!-- CHARACTER STATS -->
+          <div class="char-stats">
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-label">HP</span>
+                <span class="stat-value" id="stat-hp">100</span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-fill" id="stat-fill-hp" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-label">ATK</span>
+                <span class="stat-value" id="stat-atk">100</span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-fill" id="stat-fill-atk" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-label">DEF</span>
+                <span class="stat-value" id="stat-def">100</span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-fill" id="stat-fill-def" style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-label">CRIT</span>
+                <span class="stat-value" id="stat-crit">100%</span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-fill" id="stat-fill-crit" style="width: 60%"></div>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-label">ENERGY</span>
+                <span class="stat-value" id="stat-energy">100%</span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-fill" id="stat-fill-energy" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill preview sekarang selalu VIDEO (mp4), autoplay + loop + muted -->
+        <div class="skill-preview-container" id="skillPreview" style="cursor: pointer;" title="Click to enlarge">
+          <video id="skillVideo" class="skill-media" autoplay muted loop playsinline preload="metadata" hidden></video>
+          <div id="skillPreviewEmpty" class="skill-preview-empty" hidden><span>No Preview</span></div>
+          <div class="skill-info-overlay" id="skillInfoOverlay">
+            <h4 id="skillTitle">Ultimate Skill</h4>
+            <p id="skillDesc">Unleash devastating power against enemies.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER COLUMN: HERO IMAGE & AVATARS -->
+      <div class="center-container">
+        <div class="hero-image-container">
+          <img id="charImage" src="vila/vila_garment1.png" alt="Character Art">
+        </div>
+        <div class="wrapper">
+          <div class="hero-avatars-wrapper">
+            <button class="carousel-nav prev" aria-label="Previous">&lsaquo;</button>
+                        <div class="hero-avatars">
+              <div class="avatar-item" data-id="1">
+                <img class="avatar" src="37/icon37.png" alt="37">
+                <div class="content"><h1>37</h1></div>
+              </div>              <div class="avatar-item" data-id="2">
+                <img class="avatar" src="6/icon6.png" alt="6">
+                <div class="content"><h1>6</h1></div>
+              </div>              <div class="avatar-item" data-id="3">
+                <img class="avatar" src="A_Knight/icona_knight.png" alt="A Knight">
+                <div class="content"><h1>A Knight</h1></div>
+              </div>              <div class="avatar-item" data-id="4">
+                <img class="avatar" src="Aleph/iconaleph.png" alt="Aleph">
+                <div class="content"><h1>Aleph</h1></div>
+              </div>              <div class="avatar-item" data-id="5">
+                <img class="avatar" src="Alexios/iconalexios.png" alt="Alexios">
+                <div class="content"><h1>Alexios</h1></div>
+              </div>              <div class="avatar-item" data-id="6">
+                <img class="avatar" src="AliEn_T/AliEn_T_Live2D.png" alt="AliEn T">
+                <div class="content"><h1>AliEn T</h1></div>
+              </div>              <div class="avatar-item" data-id="7">
+                <img class="avatar" src="An-an_Lee/iconan-an_lee.png" alt="An-an Lee">
+                <div class="content"><h1>An-an Lee</h1></div>
+              </div>              <div class="avatar-item" data-id="8">
+                <img class="avatar" src="Anjo_Nala/iconanjo_nala.png" alt="Anjo Nala">
+                <div class="content"><h1>Anjo Nala</h1></div>
+              </div>              <div class="avatar-item" data-id="9">
+                <img class="avatar" src="APPLe/iconapple.png" alt="APPLe">
+                <div class="content"><h1>APPLe</h1></div>
+              </div>              <div class="avatar-item" data-id="10">
+                <img class="avatar" src="Argus/iconargus.png" alt="Argus">
+                <div class="content"><h1>Argus</h1></div>
+              </div>              <div class="avatar-item" data-id="11">
+                <img class="avatar" src="Avgust/iconavgust.png" alt="Avgust">
+                <div class="content"><h1>Avgust</h1></div>
+              </div>              <div class="avatar-item" data-id="12">
+                <img class="avatar" src="Baby_Blue/iconbaby_blue.png" alt="Baby Blue">
+                <div class="content"><h1>Baby Blue</h1></div>
+              </div>              <div class="avatar-item" data-id="13">
+                <img class="avatar" src="Balloon_Party/iconballoon_party.png" alt="Balloon Party">
+                <div class="content"><h1>Balloon Party</h1></div>
+              </div>              <div class="avatar-item" data-id="14">
+                <img class="avatar" src="Barbara/iconbarbara.png" alt="Barbara">
+                <div class="content"><h1>Barbara</h1></div>
+              </div>              <div class="avatar-item" data-id="15">
+                <img class="avatar" src="Barcarola/iconbarcarola.png" alt="Barcarola">
+                <div class="content"><h1>Barcarola</h1></div>
+              </div>              <div class="avatar-item" data-id="16">
+                <img class="avatar" src="Beryl/iconberyl.png" alt="Beryl">
+                <div class="content"><h1>Beryl</h1></div>
+              </div>              <div class="avatar-item" data-id="17">
+                <img class="avatar" src="Bkornblume/iconbkornblume.png" alt="Bkornblume">
+                <div class="content"><h1>Bkornblume</h1></div>
+              </div>              <div class="avatar-item" data-id="18">
+                <img class="avatar" src="Blonney/iconblonney.png" alt="Blonney">
+                <div class="content"><h1>Blonney</h1></div>
+              </div>              <div class="avatar-item" data-id="19">
+                <img class="avatar" src="Brimley/iconbrimley.png" alt="Brimley">
+                <div class="content"><h1>Brimley</h1></div>
+              </div>              <div class="avatar-item" data-id="20">
+                <img class="avatar" src="Brume/iconbrume.png" alt="Brume">
+                <div class="content"><h1>Brume</h1></div>
+              </div>              <div class="avatar-item" data-id="21">
+                <img class="avatar" src="Buddy_Fairchild/iconbuddy_fairchild.png" alt="Buddy Fairchild">
+                <div class="content"><h1>Buddy Fairchild</h1></div>
+              </div>              <div class="avatar-item" data-id="22">
+                <img class="avatar" src="Centurion/iconcenturion.png" alt="Centurion">
+                <div class="content"><h1>Centurion</h1></div>
+              </div>              <div class="avatar-item" data-id="23">
+                <img class="avatar" src="Charlie/iconcharlie.png" alt="Charlie">
+                <div class="content"><h1>Charlie</h1></div>
+              </div>              <div class="avatar-item" data-id="24">
+                <img class="avatar" src="Charon/iconcharon.png" alt="Charon">
+                <div class="content"><h1>Charon</h1></div>
+              </div>              <div class="avatar-item" data-id="25">
+                <img class="avatar" src="Cheng_Heguang/iconcheng_heguang.png" alt="Cheng Heguang">
+                <div class="content"><h1>Cheng Heguang</h1></div>
+              </div>              <div class="avatar-item" data-id="26">
+                <img class="avatar" src="Click/iconclick.png" alt="Click">
+                <div class="content"><h1>Click</h1></div>
+              </div>              <div class="avatar-item" data-id="27">
+                <img class="avatar" src="Cornerstone/iconcornerstone.png" alt="Cornerstone">
+                <div class="content"><h1>Cornerstone</h1></div>
+              </div>              <div class="avatar-item" data-id="28">
+                <img class="avatar" src="Corvus/iconcorvus.png" alt="Corvus">
+                <div class="content"><h1>Corvus</h1></div>
+              </div>              <div class="avatar-item" data-id="29">
+                <img class="avatar" src="Cristallo/iconcristallo.png" alt="Cristallo">
+                <div class="content"><h1>Cristallo</h1></div>
+              </div>              <div class="avatar-item" data-id="30">
+                <img class="avatar" src="Darley_Clatter/icondarley_clatter.png" alt="Darley Clatter">
+                <div class="content"><h1>Darley Clatter</h1></div>
+              </div>              <div class="avatar-item" data-id="31">
+                <img class="avatar" src="Desert_Flannel/icondesert_flannel.png" alt="Desert Flannel">
+                <div class="content"><h1>Desert Flannel</h1></div>
+              </div>              <div class="avatar-item" data-id="32">
+                <img class="avatar" src="Diggers/icondiggers.png" alt="Diggers">
+                <div class="content"><h1>Diggers</h1></div>
+              </div>              <div class="avatar-item" data-id="33">
+                <img class="avatar" src="Dikke/icondikke.png" alt="Dikke">
+                <div class="content"><h1>Dikke</h1></div>
+              </div>              <div class="avatar-item" data-id="34">
+                <img class="avatar" src="Door/Door_Live2D.png" alt="Door">
+                <div class="content"><h1>Door</h1></div>
+              </div>              <div class="avatar-item" data-id="35">
+                <img class="avatar" src="Druvis_III/icondruvis_iii.png" alt="Druvis III">
+                <div class="content"><h1>Druvis III</h1></div>
+              </div>              <div class="avatar-item" data-id="36">
+                <img class="avatar" src="Eagle/iconeagle.png" alt="Eagle">
+                <div class="content"><h1>Eagle</h1></div>
+              </div>              <div class="avatar-item" data-id="37">
+                <img class="avatar" src="Enigma/iconenigma.png" alt="Enigma">
+                <div class="content"><h1>Enigma</h1></div>
+              </div>              <div class="avatar-item" data-id="38">
+                <img class="avatar" src="Erick/iconerick.png" alt="Erick">
+                <div class="content"><h1>Erick</h1></div>
+              </div>              <div class="avatar-item" data-id="39">
+                <img class="avatar" src="Eternity/iconeternity.png" alt="Eternity">
+                <div class="content"><h1>Eternity</h1></div>
+              </div>              <div class="avatar-item" data-id="40">
+                <img class="avatar" src="Everecho/iconeverecho.png" alt="Everecho">
+                <div class="content"><h1>Everecho</h1></div>
+              </div>              <div class="avatar-item" data-id="41">
+                <img class="avatar" src="Ezio_Auditore/iconezio_auditore.png" alt="Ezio Auditore">
+                <div class="content"><h1>Ezio Auditore</h1></div>
+              </div>              <div class="avatar-item" data-id="42">
+                <img class="avatar" src="Ezra/iconezra.png" alt="Ezra">
+                <div class="content"><h1>Ezra</h1></div>
+              </div>              <div class="avatar-item" data-id="43">
+                <img class="avatar" src="Fatutu/iconfatutu.png" alt="Fatutu">
+                <div class="content"><h1>Fatutu</h1></div>
+              </div>              <div class="avatar-item" data-id="44">
+                <img class="avatar" src="Flutterpage/iconflutterpage.png" alt="Flutterpage">
+                <div class="content"><h1>Flutterpage</h1></div>
+              </div>              <div class="avatar-item" data-id="45">
+                <img class="avatar" src="Getian/icongetian.png" alt="Getian">
+                <div class="content"><h1>Getian</h1></div>
+              </div>              <div class="avatar-item" data-id="46">
+                <img class="avatar" src="Hissabeth/iconhissabeth.png" alt="Hissabeth">
+                <div class="content"><h1>Hissabeth</h1></div>
+              </div>              <div class="avatar-item" data-id="47">
+                <img class="avatar" src="Horropedia/iconhorropedia.png" alt="Horropedia">
+                <div class="content"><h1>Horropedia</h1></div>
+              </div>              <div class="avatar-item" data-id="48">
+                <img class="avatar" src="Igor/iconigor.png" alt="Igor">
+                <div class="content"><h1>Igor</h1></div>
+              </div>              <div class="avatar-item" data-id="49">
+                <img class="avatar" src="Isabella/Isabella.png" alt="Isabella">
+                <div class="content"><h1>Isabella</h1></div>
+              </div>              <div class="avatar-item" data-id="50">
+                <img class="avatar" src="Isolde/iconisolde.png" alt="Isolde">
+                <div class="content"><h1>Isolde</h1></div>
+              </div>              <div class="avatar-item" data-id="51">
+                <img class="avatar" src="J/iconj.png" alt="J">
+                <div class="content"><h1>J</h1></div>
+              </div>              <div class="avatar-item" data-id="52">
+                <img class="avatar" src="Jessica/iconjessica.png" alt="Jessica">
+                <div class="content"><h1>Jessica</h1></div>
+              </div>              <div class="avatar-item" data-id="53">
+                <img class="avatar" src="Jiu_Niangzi/iconjiu_niangzi.png" alt="Jiu Niangzi">
+                <div class="content"><h1>Jiu Niangzi</h1></div>
+              </div>              <div class="avatar-item" data-id="54">
+                <img class="avatar" src="John_Titor/iconjohn_titor.png" alt="John Titor">
+                <div class="content"><h1>John Titor</h1></div>
+              </div>              <div class="avatar-item" data-id="55">
+                <img class="avatar" src="Kaalaa_Baunaa/iconkaalaa_baunaa.png" alt="Kaalaa Baunaa">
+                <div class="content"><h1>Kaalaa Baunaa</h1></div>
+              </div>              <div class="avatar-item" data-id="56">
+                <img class="avatar" src="Kakania/iconkakania.png" alt="Kakania">
+                <div class="content"><h1>Kakania</h1></div>
+              </div>              <div class="avatar-item" data-id="57">
+                <img class="avatar" src="Kanjira/iconkanjira.png" alt="Kanjira">
+                <div class="content"><h1>Kanjira</h1></div>
+              </div>              <div class="avatar-item" data-id="58">
+                <img class="avatar" src="Kassandra/iconkassandra.png" alt="Kassandra">
+                <div class="content"><h1>Kassandra</h1></div>
+              </div>              <div class="avatar-item" data-id="59">
+                <img class="avatar" src="Leilani/iconleilani.png" alt="Leilani">
+                <div class="content"><h1>Leilani</h1></div>
+              </div>              <div class="avatar-item" data-id="60">
+                <img class="avatar" src="Liang_Yue/iconliang_yue.png" alt="Liang Yue">
+                <div class="content"><h1>Liang Yue</h1></div>
+              </div>              <div class="avatar-item" data-id="61">
+                <img class="avatar" src="Lilya/iconlilya.png" alt="Lilya">
+                <div class="content"><h1>Lilya</h1></div>
+              </div>              <div class="avatar-item" data-id="62">
+                <img class="avatar" src="Loggerhead/iconloggerhead.png" alt="Loggerhead">
+                <div class="content"><h1>Loggerhead</h1></div>
+              </div>              <div class="avatar-item" data-id="63">
+                <img class="avatar" src="Lopera/iconlopera.png" alt="Lopera">
+                <div class="content"><h1>Lopera</h1></div>
+              </div>              <div class="avatar-item" data-id="64">
+                <img class="avatar" src="Lorelei/iconlorelei.png" alt="Lorelei">
+                <div class="content"><h1>Lorelei</h1></div>
+              </div>              <div class="avatar-item" data-id="65">
+                <img class="avatar" src="Lorentz_Butterfly/iconlorentz_butterfly.png" alt="Lorentz Butterfly">
+                <div class="content"><h1>Lorentz Butterfly</h1></div>
+              </div>              <div class="avatar-item" data-id="66">
+                <img class="avatar" src="Lucy/iconlucy.png" alt="Lucy">
+                <div class="content"><h1>Lucy</h1></div>
+              </div>              <div class="avatar-item" data-id="67">
+                <img class="avatar" src="Marcus/iconmarcus.png" alt="Marcus">
+                <div class="content"><h1>Marcus</h1></div>
+              </div>              <div class="avatar-item" data-id="68">
+                <img class="avatar" src="Marsha/iconmarsha.png" alt="Marsha">
+                <div class="content"><h1>Marsha</h1></div>
+              </div>              <div class="avatar-item" data-id="69">
+                <img class="avatar" src="Matilda/iconmatilda.png" alt="Matilda">
+                <div class="content"><h1>Matilda</h1></div>
+              </div>              <div class="avatar-item" data-id="70">
+                <img class="avatar" src="Melania/iconmelania.png" alt="Melania">
+                <div class="content"><h1>Melania</h1></div>
+              </div>              <div class="avatar-item" data-id="71">
+                <img class="avatar" src="Mercuria/iconmercuria.png" alt="Mercuria">
+                <div class="content"><h1>Mercuria</h1></div>
+              </div>              <div class="avatar-item" data-id="72">
+                <img class="avatar" src="Mesmer_Jr/iconmesmer_jr.png" alt="Mesmer Jr">
+                <div class="content"><h1>Mesmer Jr</h1></div>
+              </div>              <div class="avatar-item" data-id="73">
+                <img class="avatar" src="Moldir/iconmoldir.png" alt="Moldir">
+                <div class="content"><h1>Moldir</h1></div>
+              </div>              <div class="avatar-item" data-id="74">
+                <img class="avatar" src="Mondlicht/iconmondlicht.png" alt="Mondlicht">
+                <div class="content"><h1>Mondlicht</h1></div>
+              </div>              <div class="avatar-item" data-id="75">
+                <img class="avatar" src="Ms._NewBabel/iconms._newbabel.png" alt="Ms. NewBabel">
+                <div class="content"><h1>Ms. NewBabel</h1></div>
+              </div>              <div class="avatar-item" data-id="76">
+                <img class="avatar" src="Ms._Stranger/iconms._stranger.png" alt="Ms. Stranger">
+                <div class="content"><h1>Ms. Stranger</h1></div>
+              </div>              <div class="avatar-item" data-id="77">
+                <img class="avatar" src="Name_Day/iconname_day.png" alt="Name Day">
+                <div class="content"><h1>Name Day</h1></div>
+              </div>              <div class="avatar-item" data-id="78">
+                <img class="avatar" src="Nautika/iconnautika.png" alt="Nautika">
+                <div class="content"><h1>Nautika</h1></div>
+              </div>              <div class="avatar-item" data-id="79">
+                <img class="avatar" src="Necrologist/iconnecrologist.png" alt="Necrologist">
+                <div class="content"><h1>Necrologist</h1></div>
+              </div>              <div class="avatar-item" data-id="80">
+                <img class="avatar" src="Nick_Bottom/iconnick_bottom.png" alt="Nick Bottom">
+                <div class="content"><h1>Nick Bottom</h1></div>
+              </div>              <div class="avatar-item" data-id="81">
+                <img class="avatar" src="Noire/iconnoire.png" alt="Noire">
+                <div class="content"><h1>Noire</h1></div>
+              </div>              <div class="avatar-item" data-id="82">
+                <img class="avatar" src="NORA/iconnora.png" alt="NORA">
+                <div class="content"><h1>NORA</h1></div>
+              </div>              <div class="avatar-item" data-id="83">
+                <img class="avatar" src="Oliver_Fog/iconoliver_fog.png" alt="Oliver Fog">
+                <div class="content"><h1>Oliver Fog</h1></div>
+              </div>              <div class="avatar-item" data-id="84">
+                <img class="avatar" src="ONiON/ONiON_Live2D.png" alt="ONiON">
+                <div class="content"><h1>ONiON</h1></div>
+              </div>              <div class="avatar-item" data-id="85">
+                <img class="avatar" src="Paper_Heron/iconpaper_heron.png" alt="Paper Heron">
+                <div class="content"><h1>Paper Heron</h1></div>
+              </div>              <div class="avatar-item" data-id="86">
+                <img class="avatar" src="Pavia/iconpavia.png" alt="Pavia">
+                <div class="content"><h1>Pavia</h1></div>
+              </div>              <div class="avatar-item" data-id="87">
+                <img class="avatar" src="Pickles/iconpickles.png" alt="Pickles">
+                <div class="content"><h1>Pickles</h1></div>
+              </div>              <div class="avatar-item" data-id="88">
+                <img class="avatar" src="Pioneer/iconpioneer.png" alt="Pioneer">
+                <div class="content"><h1>Pioneer</h1></div>
+              </div>              <div class="avatar-item" data-id="89">
+                <img class="avatar" src="Ramona/iconramona.png" alt="Ramona">
+                <div class="content"><h1>Ramona</h1></div>
+              </div>              <div class="avatar-item" data-id="90">
+                <img class="avatar" src="Recoleta/iconrecoleta.png" alt="Recoleta">
+                <div class="content"><h1>Recoleta</h1></div>
+              </div>              <div class="avatar-item" data-id="91">
+                <img class="avatar" src="Reed/iconreed.png" alt="Reed">
+                <div class="content"><h1>Reed</h1></div>
+              </div>              <div class="avatar-item" data-id="92">
+                <img class="avatar" src="Regulus/iconregulus.png" alt="Regulus">
+                <div class="content"><h1>Regulus</h1></div>
+              </div>              <div class="avatar-item" data-id="93">
+                <img class="avatar" src="Rhiannon/iconrhiannon.png" alt="Rhiannon">
+                <div class="content"><h1>Rhiannon</h1></div>
+              </div>              <div class="avatar-item" data-id="94">
+                <img class="avatar" src="Rubuska/iconrubuska.png" alt="Rubuska">
+                <div class="content"><h1>Rubuska</h1></div>
+              </div>              <div class="avatar-item" data-id="95">
+                <img class="avatar" src="Satsuki/iconsatsuki.png" alt="Satsuki">
+                <div class="content"><h1>Satsuki</h1></div>
+              </div>              <div class="avatar-item" data-id="96">
+                <img class="avatar" src="Semmelweis/iconsemmelweis.png" alt="Semmelweis">
+                <div class="content"><h1>Semmelweis</h1></div>
+              </div>              <div class="avatar-item" data-id="97">
+                <img class="avatar" src="Sentinel/iconsentinel.png" alt="Sentinel">
+                <div class="content"><h1>Sentinel</h1></div>
+              </div>              <div class="avatar-item" data-id="98">
+                <img class="avatar" src="Shamane/iconshamane.png" alt="Shamane">
+                <div class="content"><h1>Shamane</h1></div>
+              </div>              <div class="avatar-item" data-id="99">
+                <img class="avatar" src="Silverwing_Eagle/iconsilverwing_eagle.png" alt="Silverwing Eagle">
+                <div class="content"><h1>Silverwing Eagle</h1></div>
+              </div>              <div class="avatar-item" data-id="100">
+                <img class="avatar" src="Sonetto/iconsonetto.png" alt="Sonetto">
+                <div class="content"><h1>Sonetto</h1></div>
+              </div>              <div class="avatar-item" data-id="101">
+                <img class="avatar" src="Sotheby/iconsotheby.png" alt="Sotheby">
+                <div class="content"><h1>Sotheby</h1></div>
+              </div>              <div class="avatar-item" data-id="102">
+                <img class="avatar" src="Spathodea/iconspathodea.png" alt="Spathodea">
+                <div class="content"><h1>Spathodea</h1></div>
+              </div>              <div class="avatar-item" data-id="103">
+                <img class="avatar" src="Sputnik/iconsputnik.png" alt="Sputnik">
+                <div class="content"><h1>Sputnik</h1></div>
+              </div>              <div class="avatar-item" data-id="104">
+                <img class="avatar" src="Sweetheart/iconsweetheart.png" alt="Sweetheart">
+                <div class="content"><h1>Sweetheart</h1></div>
+              </div>              <div class="avatar-item" data-id="105">
+                <img class="avatar" src="Tennant/icontennant.png" alt="Tennant">
+                <div class="content"><h1>Tennant</h1></div>
+              </div>              <div class="avatar-item" data-id="106">
+                <img class="avatar" src="The_Fool/iconthe_fool.png" alt="The Fool">
+                <div class="content"><h1>The Fool</h1></div>
+              </div>              <div class="avatar-item" data-id="107">
+                <img class="avatar" src="The_Twins/iconthe_twins.png" alt="The Twins">
+                <div class="content"><h1>The Twins</h1></div>
+              </div>              <div class="avatar-item" data-id="108">
+                <img class="avatar" src="Tooth_Fairy/icontooth_fairy.png" alt="Tooth Fairy">
+                <div class="content"><h1>Tooth Fairy</h1></div>
+              </div>              <div class="avatar-item" data-id="109">
+                <img class="avatar" src="TTT/iconttt.png" alt="TTT">
+                <div class="content"><h1>TTT</h1></div>
+              </div>              <div class="avatar-item" data-id="110">
+                <img class="avatar" src="Tuesday/icontuesday.png" alt="Tuesday">
+                <div class="content"><h1>Tuesday</h1></div>
+              </div>              <div class="avatar-item" data-id="111">
+                <img class="avatar" src="Twins_Sleep/Twins_Sleep_Garment1.png" alt="Twins Sleep">
+                <div class="content"><h1>Twins Sleep</h1></div>
+              </div>              <div class="avatar-item" data-id="112">
+                <img class="avatar" src="Ulrich/iconulrich.png" alt="Ulrich">
+                <div class="content"><h1>Ulrich</h1></div>
+              </div>              <div class="avatar-item" data-id="113">
+                <img class="avatar" src="Ulu/iconulu.png" alt="Ulu">
+                <div class="content"><h1>Ulu</h1></div>
+              </div>              <div class="avatar-item" data-id="114">
+                <img class="avatar" src="vila/iconvila.png" alt="vila">
+                <div class="content"><h1>vila</h1></div>
+              </div>              <div class="avatar-item" data-id="115">
+                <img class="avatar" src="Voyager/iconvoyager.png" alt="Voyager">
+                <div class="content"><h1>Voyager</h1></div>
+              </div>              <div class="avatar-item" data-id="116">
+                <img class="avatar" src="White_Rum/iconwhite_rum.png" alt="White Rum">
+                <div class="content"><h1>White Rum</h1></div>
+              </div>              <div class="avatar-item" data-id="117">
+                <img class="avatar" src="Willow/iconwillow.png" alt="Willow">
+                <div class="content"><h1>Willow</h1></div>
+              </div>              <div class="avatar-item" data-id="118">
+                <img class="avatar" src="Windsong/iconwindsong.png" alt="Windsong">
+                <div class="content"><h1>Windsong</h1></div>
+              </div>              <div class="avatar-item" data-id="119">
+                <img class="avatar" src="X/iconx.png" alt="X">
+                <div class="content"><h1>X</h1></div>
+              </div>              <div class="avatar-item" data-id="120">
+                <img class="avatar" src="Yenisei/iconyenisei.png" alt="Yenisei">
+                <div class="content"><h1>Yenisei</h1></div>
+              </div>            </div>
+              <div>
+                <img class="avatar" src="Зима/iconзима.png"data-id="121" alt="Зима">
+                <div class="content"><h1>Зима</h1></div>
+              </div>
+            <button class="carousel-nav next" aria-label="Next">&rsaquo;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: TABS & SKILLS -->
+      <div class="column-right">
+        <div class="tabs-container">
+          <div class="tab-group category-tabs">
+            <button class="tab-btn active" data-category="origin" aria-label="Origin Skin">
+              <img src="vila/tabvila1.png" alt="Origin">
+            </button>
+            <button class="tab-btn" data-category="character" aria-label="Character Skin">
+              <img src="vila/tabvila2.png" alt="Character">
+            </button>
+            <button class="tab-btn" data-category="weapon" aria-label="Weapon Skin">
+              <img src="vila/tabvila3.png" alt="Weapon">
+            </button>
+          </div>
+
+          <div class="tab-group skill-tabs">
+            <button class="skill-btn active" data-skill="ultimate" aria-label="Ultimate Skill">
+              <img id="skillIcon-ultimate" src="vila/vila-ulti.png" alt="Ultimate">
+            </button>
+            <button class="skill-btn" data-skill="skill-2" aria-label="Skill 2">
+              <img id="skillIcon-skill-2" src="vila/vila-skill2.png" alt="Skill 2">
+            </button>
+            <button class="skill-btn" data-skill="skill-1" aria-label="Skill 1">
+              <img id="skillIcon-skill-1" src="vila/vila-skill1.png" alt="Skill 1">
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FULLSCREEN MODAL -->
+  <div class="skill-modal" id="skillModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <video id="modalVideo" class="modal-video" autoplay muted loop playsinline preload="metadata"></video>
+      <div class="modal-info">
+        <h2 id="modalTitle">Skill Name</h2>
+        <p id="modalDesc">Skill description goes here.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
